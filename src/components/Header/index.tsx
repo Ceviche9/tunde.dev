@@ -1,6 +1,7 @@
-import {HStack, Text} from "@chakra-ui/react"
+import {HStack, Text, Link} from "@chakra-ui/react"
 
-import Link from "next/link"
+import NextLink from "next/link"
+import { FiExternalLink } from 'react-icons/fi'
 
 type HeaderProps = {
   isHomePage: boolean
@@ -20,9 +21,9 @@ export const Header = ({isHomePage}: HeaderProps) => {
           Tundê.dev
         </Text>
         <HStack
-          spacing="5"
+          spacing="8"
         >
-          <Link href="/" passHref>
+          <NextLink href="/" passHref>
             <Text 
               fontWeight="400" 
               color="gray.300"
@@ -32,15 +33,34 @@ export const Header = ({isHomePage}: HeaderProps) => {
             >
               Sobre
             </Text>
-          </Link>
-          <Link href="/projects" passHref>
+          </NextLink>
+
+          <NextLink href="/projects" passHref>
             <Text 
               fontWeight="500"
+              borderBottomRadius="4"
+              borderBottomWidth="medium"
+              borderColor="gray.50"
               _hover={{
-                cursor: "pointer"
+                cursor: "pointer",                
               }}
             >
               Projetos
+            </Text>
+          </NextLink>
+
+          <Link 
+            href="https://spacetraveling-tun.vercel.app/" 
+            isExternal
+          >
+            <Text 
+              fontWeight="400"
+              color="gray.300"
+              _hover={{
+                cursor: "pointer",                
+              }}
+            >
+              Blog
             </Text>
           </Link>
         </HStack>
@@ -60,22 +80,25 @@ export const Header = ({isHomePage}: HeaderProps) => {
         Tundê.dev
       </Text>
       <HStack
-        spacing="5"
+        spacing="8"
       >
-        <Link 
+        <NextLink 
           href="/" 
           passHref
         >
           <Text 
             fontWeight="500"
+            borderBottomRadius="4"
+            borderBottomWidth="medium"
+            borderColor="gray.50"
             _hover={{
               cursor: "pointer"
             }}  
           >
             Sobre
           </Text>
-        </Link>
-        <Link href="/projects" passHref>
+        </NextLink>
+        <NextLink href="/projects" passHref>
           <Text 
             fontWeight="400" 
             color="gray.300"
@@ -83,7 +106,23 @@ export const Header = ({isHomePage}: HeaderProps) => {
               cursor: "pointer"
             }}
           >Projetos</Text>
-        </Link>
+        </NextLink>
+
+        <Link 
+            href="https://spacetraveling-tun.vercel.app/" 
+            isExternal
+          >
+            <Text 
+              fontWeight="400"
+              color="gray.300"
+              _hover={{
+                cursor: "pointer",                
+              }}
+            >
+              Blog
+            </Text>
+          </Link>
+
       </HStack>
     </HStack>
   )

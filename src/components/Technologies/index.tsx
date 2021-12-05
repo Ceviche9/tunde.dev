@@ -7,7 +7,7 @@ type TechnologiesProps = {
 export const Technologies = ({title}: TechnologiesProps) => {
   return(
     <HStack justifySelf="flex-start">
-      <Text fontSize="md" fontWeight="400" color="purple.500">{'>'}</Text>
+      <Text fontSize="md" fontWeight="400" color="purple.300">{'>'}</Text>
       <Text 
         fontSize="md" 
         fontWeight="bold" 

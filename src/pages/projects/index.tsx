@@ -102,23 +102,6 @@ export default function Projects({projects, next_page}: ProjectsProps) {
       <Header isHomePage={false}/>
       <Divider borderColor="gray.800"/>
 
-      <HStack
-        mt="10" 
-        justifySelf="flex-start"
-      >
-          <Text fontSize="2xl" fontWeight="400" color="purple.500">{'<'}</Text>
-          <Text fontSize="2xl" fontWeight="bold" color="gray.100">Portfólio</Text>
-          <Text fontSize="2xl" fontWeight="400" color="purple.500">{'/>'}</Text>
-      </HStack>
-
-      <Text
-        mt="2"
-        fontSize="md" 
-        color="gray.200"
-      >
-        A seguir confira alguns projetos pessoais que estive/estou trabalhando:
-      </Text>
-
       <Flex
         mt="3"
         flexDirection="column"
