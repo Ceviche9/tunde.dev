@@ -1,0 +1,37 @@
+
+import {
+  SiHtml5 as Html,
+  SiCss3 as Css,
+  SiJavascript as Javascript,
+  SiSass as Sass,
+  SiSequelize as Sequelize,
+  SiYarn as Yarn,
+  SiReact as React,
+  SiNextdotjs as Next,
+  SiTypescript as Typescript,
+  SiNodedotjs as Node,
+  SiPostgresql as Postgresql,
+  SiFigma as Figma,
+  SiJest as Jest,
+  SiGit as Git,
+  SiGithub as Github,
+  SiLinux as Linux,
+} from 'react-icons/si';
+
+export const icons = {
+  Javascript,
+  Node,
+  Yarn,
+  Postgresql,
+  React,
+  Typescript,
+  Jest,
+  Next,
+  Git,
+  Sequelize,
+  Sass,
+  // Html,
+  // Css,
+  Github,
+  // Linux,
+};
