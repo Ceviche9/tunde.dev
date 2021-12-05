@@ -5,9 +5,12 @@ import {
     SiLinkedin as Linkedin
 } from "react-icons/si"
 
+import {IoRocketSharp as Rocket} from "react-icons/io5"
+
 import {AiOutlineMail as Mail} from "react-icons/ai"
 
 import {SkillsContainer} from "../components/Skills"
+import {Header} from "../components/Header"
 
 import Image from "next/image"
 
@@ -18,27 +21,7 @@ export default function Home() {
       flexDirection="column"
       p="10"
     >
-      <HStack
-        px="30px"
-        justify="space-between"
-      >
-        <Text 
-          fontWeight="bold" 
-          fontSize="2xl"
-        >
-          Tundê.dev
-        </Text>
-        <HStack
-          spacing="5"
-        >
-          <Link>
-            <Text fontWeight="500">Sobre</Text>
-          </Link>
-          <Link>
-            <Text fontWeight="400" color="gray.300">Projetos</Text>
-          </Link>
-        </HStack>
-      </HStack>
+      <Header isHomePage={true}/>
       <Divider borderColor="gray.800"/>
 
       <Flex
@@ -111,8 +94,8 @@ export default function Home() {
             color="gray.200"
           >
             Atualmente faço licenciatura em Química no Instituto Federal de Educação, Ciência e Tecnologia do Ceará
-            e cursando o Ignite da Rocketseat para melhorar meus conhecimentos de desenvolvimento. Em breve, 
-            Pretendo transferir de curso e fazer Ciência da computação.
+            e cursando o Ignite da Rocketseat para melhorar meus conhecimentos em desenvolvimento de software. Em breve, 
+            pretendo transferir de curso e fazer Ciência da computação.
           </Text>
         </Stack>
 
@@ -140,6 +123,7 @@ export default function Home() {
               <Linkedin size={23}/>
             </Flex>
           </Link>
+
           <Link 
             href="https://github.com/Ceviche9"
           >
@@ -158,6 +142,24 @@ export default function Home() {
               <Github size={25}/>
             </Flex>
           </Link>
+
+          <Link href="https://app.rocketseat.com.br/me/tunde-cavalcante-08588">
+            <Flex
+              p="1"
+              width={10}
+              height={10}
+              alignItems="center"
+              justifyContent="center"
+              borderWidth="medium"
+              borderColor="#0e0116"
+              _hover={{
+                borderColor: "purple.800"
+              }}
+            >
+              <Rocket size={30}/>
+            </Flex>
+          </Link>
+
           <Link href="mailto:ayotunde_sales@hotmail.com">
             <Flex
               p="1"
@@ -178,7 +180,7 @@ export default function Home() {
 
         <HStack mt="10">
           <Text fontSize="2xl" fontWeight="400" color="purple.500">{'<'}</Text>
-          <Text fontSize="3xl" fontWeight="bold" color="gray.100">Principais Skills</Text>
+          <Text fontSize="3xl" fontWeight="bold" color="gray.100">Hard Skills</Text>
           <Text fontSize="2xl" fontWeight="400" color="purple.500">{'/>'}</Text>
         </HStack>
 

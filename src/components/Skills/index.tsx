@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import {useState} from "react"
 import {Grid, GridItem, Text, Flex, Tooltip} from "@chakra-ui/react"
 
