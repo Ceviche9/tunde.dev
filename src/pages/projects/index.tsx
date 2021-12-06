@@ -1,5 +1,7 @@
-import {useState, useRef} from "react"
-import {Flex, HStack, Text, Divider, Button, Spinner, Stack, ScaleFade} from "@chakra-ui/react"
+import {useState} from "react"
+import {Flex, HStack, Text, Divider, Button, Spinner, Stack} from "@chakra-ui/react"
+
+import { motion } from "framer-motion"
 
 import Head from "next/head"
 
@@ -8,8 +10,6 @@ import {
 } from "react-icons/si"
 
 import {FiExternalLink as LInkIcon} from "react-icons/fi"
-
-import { useInViewport } from "react-in-viewport";
 
 import {Banner} from "../../components/Banner"
 import {About} from "../../components/About"
@@ -37,7 +37,6 @@ type ProjectsProps = {
 }
 
 export default function Projects({projects, next_page}: ProjectsProps) {
-  const ref = useRef(null);
   const [projectsArray, setProjectsArray] = useState<ProjectDataProps[]>(projects);
   const [nextPage, setNextPage] = useState(next_page);
   const [showLoading, setShowLoading] = useState(false);
@@ -69,13 +68,6 @@ export default function Projects({projects, next_page}: ProjectsProps) {
     }, 200);
   };
 
-  const { enterCount } = useInViewport(
-    ref,
-    { rootMargin: "600px" },
-    { disconnectOnLeave: false },
-    {}
-  );
-
   function handleLoadPosts() {
     loadProjects()
   }
@@ -105,71 +97,84 @@ export default function Projects({projects, next_page}: ProjectsProps) {
         >
           {projectsArray.map((project, index) => {
             return(
-              <ScaleFade
-                key={index}
-                initialScale={0.7}
-                in={enterCount > 0}
-                whileHover={{ scale: 1.07 }}
-              >
-                <Stack
-                  ref={ref}
-                  direction={['column', 'row']}
-                  px={["4", "4"]}
-                  py={["5", ""]}
-                  mt="10"
-                  w={[345 ,778]}
-                  h={[582 ,415]}
-                  borderRadius={["15", "20"]}
-                  borderBottomWidth={["thick", "medium"]}
-                  borderColor="purple.600"
-                  bgColor="purple.900"
-                  align="center"
-                  justify="space-between"
-                >
-                  <Banner image={project.banner}/>
-                  <Flex
-                    flex="1"
-                    justify="flex-end"
-                    h={315}
-                    flexDirection="column"
+                <motion.div 
+                  key={index} 
+                  initial="hidden"
+                  animate="visible"
+                  whileHover={{ scale: 1.03, transition: {delay: 0, duration: 0.1} }}
+                  variants={{
+                    hidden: {
+                      scale: 0.7,
+                      opacity: 0
+                    },
+                    visible: {
+                      scale: 1,
+                      opacity: 1,
+                      transition: {
+                        delay: 0.2,
+                        duration: 0.2
+                      }
+                    }
+                  }}
                   >
-                    <About title={project.title} about={project.about}/>
-
-                    <Flex 
-                      mt="2" 
-                      px="5"
+                  <Stack
+                    direction={['column', 'row']}
+                    px={["4", "4"]}
+                    py={["5", ""]}
+                    mt="10"
+                    w={[345 ,778]}
+                    h={[582 ,415]}
+                    borderRadius={["15", "20"]}
+                    borderBottomWidth={["thick", "medium"]}
+                    borderColor="purple.600"
+                    bgColor="purple.900"
+                    align="center"
+                    justify="space-between"
+                  >
+                    <Banner image={project.banner}/>
+                    <Flex
+                      flex="1"
+                      justify="flex-end"
+                      h={315}
                       flexDirection="column"
                     >
-                      {project.technologies.map((data, index) => {
-                        return(
-                          <Technologies key={index} title={data[0]}/>
-                        )
-                      })}
-                    </Flex>
-                    
-                    <Flex
-                      mt="2"
-                      justify="center"
-                    >
-                      <Button
-                        fontSize={["md","lg"]}
-                        p={["5","3"]}
-                        bgColor={["purple.600", "purple.900"]}
-                        borderWidth="medium"
-                        borderColor="purple.700"
-                        _hover={{
-                          bgColor: "purple.700"
-                        }}
-                        size="lg"
-                        onClick={() => handleClickButton(project.link)}
-                      >
-                        Acessar repositório
-                      </Button>
-                    </Flex>
+                      <About title={project.title} about={project.about}/>
 
-                  </Flex>
-                </Stack>
-              </ScaleFade>
+                      <Flex 
+                        mt="2" 
+                        px="5"
+                        flexDirection="column"
+                      >
+                        {project.technologies.map((data, index) => {
+                          return(
+                            <Technologies key={index} title={data[0]}/>
+                          )
+                        })}
+                      </Flex>
+                      
+                      <Flex
+                        mt="2"
+                        justify="center"
+                      >
+                        <Button
+                          fontSize={["md","lg"]}
+                          p={["5","3"]}
+                          bgColor={["purple.600", "purple.900"]}
+                          borderWidth="medium"
+                          borderColor="purple.700"
+                          _hover={{
+                            bgColor: "purple.700"
+                          }}
+                          size="lg"
+                          onClick={() => handleClickButton(project.link)}
+                        >
+                          Acessar repositório
+                        </Button>
+                      </Flex>
+
+                    </Flex>
+                  </Stack>
+                </motion.div>
             )
           })}
 
