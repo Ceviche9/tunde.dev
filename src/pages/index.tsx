@@ -84,7 +84,7 @@ export default function Home() {
             color="gray.100"
           >
             Em janeiro de 2020 decidi que não queria mais cursar licenciatura em Química, pois me identificava muito mais
-            com o curso de Ciẽncia de Computação. Então comecei a me planejar para abrir mão de 4 semestres do curso de 
+            com o curso de Ciência de Computação. Então comecei a me planejar para abrir mão de 4 semestres do curso de 
             licenciatura e esperar o edital de transferência interna da minha faculdade (IFCE). Infelizmente, com a 
             pandemia do Covid-19 os editais de transferências foram suspenso por um tempo indeterminado, portanto, 
             comecei por conta própria a mergulhar no mundo da tecnologia e do desenvolvimento de software.
