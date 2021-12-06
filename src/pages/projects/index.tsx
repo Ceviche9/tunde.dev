@@ -36,16 +36,17 @@ type ProjectsProps = {
 export default function Projects({projects, next_page}: ProjectsProps) {
   const route = useRouter()
   const [projectsArray, setProjectsArray] = useState<ProjectDataProps[]>(projects);
-  const [nextPage, setNextPage] = useState<string>(next_page);
+  const [nextPage, setNextPage] = useState(next_page);
   const [showLoading, setShowLoading] = useState(false);
-
+  
   const loadProjects = async (): Promise<void> => {
     setShowLoading(true);
     setTimeout(async () => {
-      if (next_page) {
+      if (nextPage) {
         try {
-          const response = fetch(next_page);
+          const response = fetch(nextPage);
           const data = (await response).json();
+          const newNextPage = (await data).next_page
           const newProjects = (await data).results.map(project => ({
             link: project.data.link.url,
             title: RichText.asText(project.data.title),
@@ -54,8 +55,8 @@ export default function Projects({projects, next_page}: ProjectsProps) {
             technologies: project.data.technologies.map(data => data.title1.map(text => text.text))
           }));
 
-          setNextPage((await data).next_page);
-          setProjectsArray([...projects, ...newProjects]);
+          setNextPage(newNextPage);
+          setProjectsArray((projects) => [...projects, ...newProjects]);
           setShowLoading(false);
         } catch (err) {
           setShowLoading(false);
