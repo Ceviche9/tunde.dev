@@ -231,8 +231,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const ProjectsResponse = await prismic.query(
     [Prismic.predicates.at('document.type', 'project')],
     {
-      pageSize: 3,
-      orderings: '[document.first_publication_date]',
+      pageSize: 2,
+      orderings: '[document.last_publication_date desc]',
     }
   )
   const projects = ProjectsResponse.results.map(project => {
