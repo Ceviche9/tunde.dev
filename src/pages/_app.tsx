@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <ChakraProvider theme={theme}>
       <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
         pageInitial: {
-          opacity: 0
+          opacity: 0.9
         },
         pageAnimate: {
           opacity: 1

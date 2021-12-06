@@ -24,13 +24,7 @@ export const SkillsContainer = () => {
             key={skill}
           >
             <motion.div
-              whileHover={{ scale: 1.2, rotate: 360, transition: {delay: 0.1, duration: 0.5} }}
-              whileTap={{
-                scale: 0.8,
-                rotate: -360,
-                transition: { duration: 0.4},
-                borderRadius: "100%"
-              }}
+              whileHover={{ scale: 1.12, transition: {delay: 0.1, duration: 0.2} }}
             >
               <Flex
                 align="center"
@@ -53,7 +47,7 @@ export const SkillsContainer = () => {
                 }}
                 > 
                 { showLabel ?
-                  <Text fontSize="2xl" fontWeight="bold" transform={["rotate(360deg)"]}>{skill}</Text>
+                  <Text fontSize="2xl" fontWeight="bold">{skill}</Text>
                   : <Icon size={80}/>
                 }
               </Flex>
