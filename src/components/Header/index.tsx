@@ -1,7 +1,7 @@
 import {HStack, Text, Link} from "@chakra-ui/react"
 
 import NextLink from "next/link"
-import { FiExternalLink } from 'react-icons/fi'
+import {GiCat as Cat} from "react-icons/gi"
 
 type HeaderProps = {
   isHomePage: boolean
@@ -14,12 +14,15 @@ export const Header = ({isHomePage}: HeaderProps) => {
       px={["","30px"]}
       justify="space-between"
       >
-        <Text 
-          fontWeight="bold" 
-          fontSize={["xl","2xl"]}
-        >
-          Tundê.dev
-        </Text>
+        <HStack>
+          <Text
+            fontWeight="bold" 
+            fontSize={["xl","2xl"]}
+          >
+            Tundê.dev
+          </Text>
+          <Cat size={25}/>
+        </HStack>
         <HStack
           spacing={["4", "8"]}
         >
@@ -83,12 +86,15 @@ export const Header = ({isHomePage}: HeaderProps) => {
     px={["","30px"]}
     justify="space-between"
   >
-      <Text 
-        fontWeight="bold" 
-        fontSize={["xl","2xl"]}
-      >
-        Tundê.dev
-      </Text>
+      <HStack>
+        <Text
+          fontWeight="bold" 
+          fontSize={["xl","2xl"]}
+        >
+          Tundê.dev
+        </Text>
+        <Cat size={25}/>
+      </HStack>
       <HStack
         spacing={["4", "8"]}
       >
