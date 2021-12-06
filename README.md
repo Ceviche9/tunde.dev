@@ -9,8 +9,7 @@
 
 ## 📄 About the project
 
-The purpose of this site is to use it as a personal portfolio, where it is more intuitive and simple to show my projects and a little bit about myself.
-
+The purpose of this site is to use it as a personal portfolio, where it shows a little bit about my background as a developer and shows some of my projects.
 
 ## 📝 Technologies
 
