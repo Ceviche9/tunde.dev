@@ -121,8 +121,8 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                   mt="10"
                   w={[345 ,778]}
                   h={[582 ,415]}
-                  borderRadius="20"
-                  borderBottomWidth="medium"
+                  borderRadius={["15", "20"]}
+                  borderBottomWidth={["thick", "medium"]}
                   borderColor="purple.600"
                   bgColor="purple.900"
                   align="center"
@@ -154,14 +154,15 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                       justify="center"
                     >
                       <Button
-                        p="3"
-                        bgColor="purple.900"
+                        fontSize={["md","lg"]}
+                        p={["5","3"]}
+                        bgColor={["purple.600", "purple.900"]}
                         borderWidth="medium"
                         borderColor="purple.700"
                         _hover={{
                           bgColor: "purple.700"
                         }}
-                        size='lg'
+                        size="lg"
                         onClick={() => handleClickButton(project.link)}
                       >
                         Acessar repositório
