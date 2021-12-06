@@ -9,7 +9,7 @@ export const Technologies = ({title}: TechnologiesProps) => {
     <HStack justifySelf="flex-start">
       <Text fontSize="md" fontWeight="400" color="purple.300">{'>'}</Text>
       <Text 
-        fontSize="md" 
+        fontSize={["sm", "md"]} 
         fontWeight="bold" 
         color="gray.100"
         _hover={{
