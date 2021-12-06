@@ -22,7 +22,6 @@ import { getPrismicClient } from '../../services/prismic';
 import {RichText} from "prismic-dom"
 
 import Prismic from '@prismicio/client';
-import { useRouter } from "next/router"
 
 type ProjectDataProps = {
   link: string
@@ -38,7 +37,6 @@ type ProjectsProps = {
 }
 
 export default function Projects({projects, next_page}: ProjectsProps) {
-  const route = useRouter()
   const ref = useRef(null);
   const [projectsArray, setProjectsArray] = useState<ProjectDataProps[]>(projects);
   const [nextPage, setNextPage] = useState(next_page);
@@ -83,7 +81,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
   }
 
   function handleClickButton(link: string) {
-    route.push(link)
+    window.open(link, '_blank')
   }
 
   return(
