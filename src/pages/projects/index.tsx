@@ -107,9 +107,9 @@ export default function Projects({projects, next_page}: ProjectsProps) {
             return(
               <ScaleFade
                 key={index}
-                initialScale={0.9}
+                initialScale={0.5}
                 in={enterCount > 0}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.07 }}
               >
                 <Stack
                   ref={ref}
