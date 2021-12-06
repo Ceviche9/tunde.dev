@@ -232,6 +232,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       projects,
       next_page: ProjectsResponse.next_page
-    }
+    },
+    revalidate: 60 * 30, // 30 Minutos
   }
 }
