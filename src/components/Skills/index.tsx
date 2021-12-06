@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {useState} from "react"
-import {Grid, GridItem, Text, Flex, Tooltip} from "@chakra-ui/react"
+import {Grid, GridItem, Text, Flex} from "@chakra-ui/react"
+import { motion } from "framer-motion"
 
 import {icons} from "./icons"
 
@@ -22,31 +23,41 @@ export const SkillsContainer = () => {
           <GridItem 
             key={skill}
           >
-            <Flex
-              align="center"
-              justify="center"
-              p="10"
-              h={160}
-              w={160}
-              bgColor="#150121"
-              borderBottomWidth="medium"
-              borderColor="purple.700"
-              onMouseEnter={() => setShowLabel(true)}
-              onMouseLeave={() => setShowLabel(false)}
-              borderRadius="25"
-              _hover={{
-                borderWidth: "medium",
-                borderColor: "purple.500",
-                opacity: "1",
-                bgColor: "#0d0114", // #290240
-                cursor: "pointer"
+            <motion.div
+              whileHover={{ scale: 1.2, rotate: 360, transition: {delay: 0.1, duration: 0.5} }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -360,
+                transition: { duration: 0.4},
+                borderRadius: "100%"
               }}
-            > 
-              { showLabel ?
-                <Text fontSize="2xl" fontWeight="bold">{skill}</Text>
-                : <Icon size={80}/>
-              }
-            </Flex>
+            >
+              <Flex
+                align="center"
+                justify="center"
+                p="10"
+                h={160}
+                w={160}
+                bgColor="#150121"
+                borderBottomWidth="medium"
+                borderColor="purple.700"
+                onMouseEnter={() => setShowLabel(true)}
+                onMouseLeave={() => setShowLabel(false)}
+                borderRadius="25"
+                _hover={{
+                  borderWidth: "medium",
+                  borderColor: "purple.500",
+                  opacity: "1",
+                  bgColor: "#0d0114", // #290240
+                  cursor: "pointer"
+                }}
+                > 
+                { showLabel ?
+                  <Text fontSize="2xl" fontWeight="bold" transform={["rotate(360deg)"]}>{skill}</Text>
+                  : <Icon size={80}/>
+                }
+              </Flex>
+            </motion.div>
           </GridItem>
         )
       })}

@@ -1,4 +1,5 @@
 import {Flex, Text, HStack, VStack, Stack, Link, Divider} from "@chakra-ui/react"
+import { motion } from "framer-motion"
 
 import Head from "next/head"
 
@@ -15,6 +16,7 @@ import {SkillsContainer} from "../components/Skills"
 import {Header} from "../components/Header"
 
 import Image from "next/image"
+import { LinkComponent } from '../components/Link/index';
 
 export default function Home() {
   return (
@@ -36,34 +38,73 @@ export default function Home() {
           align="center"
           flexDirection="column"
         >
-          <VStack>
-            <Text
-              paddingRight="5"
-              fontSize="2xl" 
-              fontWeight="400" 
-              color="gray.200"
-            >
-              <Image
-                src="/images/hi.gif"
-                alt="Olá"
-                width={28}
-                height={27}
-                layout="fixed"
-              />{' '}
-              Olá, eu sou
-            </Text>
-            <Text fontSize={["2xl", "5xl"]} fontWeight="bold" color="gray.50">Tundê Cavalcante</Text>
-            <Text fontSize={["xl", "2xl"]} fontWeight="400" color="gray.300">Desenvolvedor FullStack</Text>
-          </VStack>
+          <motion.div 
+            initial="hidden" 
+            animate="visible" 
+            variants={{
+            hidden: {
+              scale: .3,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .2
+              }
+            }
+          }}>
+            <VStack>
+              <motion.div whileHover={{ scale: 1.2, transition: {duration: 0.2} }}>
+                <Text
+                  paddingRight="5"
+                  fontSize="2xl" 
+                  fontWeight="400" 
+                  color="gray.200"
+                >
+                  <Image
+                    src="/images/hi.gif"
+                    alt="Olá"
+                    width={28}
+                    height={27}
+                    layout="fixed"
+                  />{' '}
+                  Olá, eu sou
+                </Text>
+              </motion.div> 
+                <Text fontSize={["2xl", "5xl"]} fontWeight="bold" color="gray.50">Tundê Cavalcante</Text>
+              <motion.div whileHover={{ scale: 1.2, transition: {duration: 0.2} }}>
+                <Text fontSize={["xl", "2xl"]} fontWeight="400" color="gray.300">Desenvolvedor FullStack</Text>
+              </motion.div> 
+            </VStack>
+          </motion.div>
 
-          <Flex marginLeft={["6","16"]}>
-            <Image 
-              width={420}
-              height={410}
-              alt="Dev"
-              src="/images/dev.svg"
-            />
-          </Flex>
+          <motion.div 
+            initial="hidden" 
+            animate="visible" 
+            variants={{
+            hidden: {
+              scale: 0.5,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.6,
+                duration: 0.5
+              }
+            }
+          }}>
+            <Flex marginLeft={["6","16"]}>
+              <Image 
+                width={420}
+                height={410}
+                alt="Dev"
+                src="/images/dev.svg"
+              />
+            </Flex>
+          </motion.div>
         </Flex>
 
         <Flex 
@@ -122,85 +163,21 @@ export default function Home() {
             align="center"
             justify="flex-end"
           >
-            <Link
-              href="https://www.linkedin.com/in/tund%C3%AA-cavalcante-1621441ba/"
-              isExternal
-            >
-              <Flex   
-                p="1"
-                width={10}
-                height={10}
-                alignItems="center"
-                justifyContent="center"
-                borderWidth="medium"
-                borderColor="#0e0116"
-                _hover={{
-                  borderColor: "purple.800"
-                }}
-              >
-                <Linkedin size={23}/>
-              </Flex>
-            </Link>
+            <LinkComponent href={"https://www.linkedin.com/in/tund%C3%AA-cavalcante-1621441ba/"}>
+              <Linkedin size={23}/>
+            </LinkComponent>
 
-            <Link 
-              href="https://github.com/Ceviche9"
-              isExternal
-            >
-              <Flex
-                p="1"
-                width={10}
-                height={10}
-                alignItems="center"
-                justifyContent="center"
-                borderWidth="medium"
-                borderColor="#0e0116"
-                _hover={{
-                  borderColor: "purple.800"
-                }}
-              >
-                <Github size={25}/>
-              </Flex>
-            </Link>
+            <LinkComponent href={"https://github.com/Ceviche9"}>
+              <Github size={25}/>
+            </LinkComponent>
 
-            <Link 
-              href="https://app.rocketseat.com.br/me/tunde-cavalcante-08588"
-              isExternal
-            >
-              <Flex
-                p="1"
-                width={10}
-                height={10}
-                alignItems="center"
-                justifyContent="center"
-                borderWidth="medium"
-                borderColor="#0e0116"
-                _hover={{
-                  borderColor: "purple.800"
-                }}
-              >
-                <Rocket size={30}/>
-              </Flex>
-            </Link>
+            <LinkComponent href={"https://app.rocketseat.com.br/me/tunde-cavalcante-08588"}>
+              <Rocket size={30}/>
+            </LinkComponent>
 
-            <Link 
-              href="mailto:ayotunde_sales@hotmail.com"
-              isExternal
-            >
-              <Flex
-                p="1"
-                width={10}
-                height={10}
-                alignItems="center"
-                justifyContent="center"
-                borderWidth="medium"
-                borderColor="#0e0116"
-                _hover={{
-                  borderColor: "purple.800"
-                }}
-              >
-                <Mail size={30}/>
-              </Flex>
-            </Link>
+            <LinkComponent href={"mailto:ayotunde_sales@hotmail.com"}>
+              <Mail size={30}/>
+            </LinkComponent>
           </HStack>
 
           <HStack mt="10">
