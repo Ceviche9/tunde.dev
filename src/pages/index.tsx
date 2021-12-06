@@ -19,7 +19,7 @@ export default function Home() {
     <Flex
       w="100%"
       flexDirection="column"
-      p="10"
+      p={["5", "10"]}
     >
       <Header isHomePage={true}/>
       <Divider borderColor="gray.800"/>
@@ -46,11 +46,11 @@ export default function Home() {
             />{' '}
             Olá, eu sou
           </Text>
-          <Text fontSize="5xl" fontWeight="bold" color="gray.50">Tundê Cavalcante</Text>
-          <Text fontSize="3xl" fontWeight="400" color="gray.300">Desenvolvedor FullStack</Text>
+          <Text fontSize={["2xl", "5xl"]} fontWeight="bold" color="gray.50">Tundê Cavalcante</Text>
+          <Text fontSize={["xl", "2xl"]} fontWeight="400" color="gray.300">Desenvolvedor FullStack</Text>
         </VStack>
 
-        <Flex marginLeft="16">
+        <Flex marginLeft={["6","16"]}>
           <Image 
             width={420}
             height={410}
@@ -67,7 +67,7 @@ export default function Home() {
       >
         <HStack>
           <Text fontSize="2xl" fontWeight="400" color="purple.500">{'<'}</Text>
-          <Text fontSize="3xl" fontWeight="bold" color="gray.100">Sobre</Text>
+          <Text fontSize={["2xl", "3xl"]} fontWeight="bold" color="gray.100">Sobre</Text>
           <Text fontSize="2xl" fontWeight="400" color="purple.500">{'/>'}</Text>
         </HStack>
 
@@ -79,9 +79,9 @@ export default function Home() {
           direction="column"
         >
           <Text
-            fontSize="xl"
+            fontSize={["md", "xl"]}
             fontWeight="400"
-            color="gray.200"
+            color="gray.100"
           >
             Desenvolvedor full stack autodidata apaixonado pelas tecnologias de desenvolvimento back-end, front-end e mobile.
             atualmente estou me aprofundando no desenvolvimento Frontend, com foco na construção de interfaces declarativas no NextJs, 
@@ -89,9 +89,9 @@ export default function Home() {
             novo artigo ou tutorial no meu blog.
           </Text>
           <Text
-            fontSize="xl"
+            fontSize={["md", "xl"]}
             fontWeight="400"
-            color="gray.200"
+            color="gray.100"
           >
             Atualmente faço licenciatura em Química no Instituto Federal de Educação, Ciência e Tecnologia do Ceará
             e cursando o Ignite da Rocketseat para melhorar meus conhecimentos em desenvolvimento de software. Em breve, 

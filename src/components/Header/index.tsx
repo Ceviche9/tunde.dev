@@ -11,20 +11,21 @@ export const Header = ({isHomePage}: HeaderProps) => {
   if(!isHomePage) {
     return (
       <HStack
-      px="30px"
+      px={["","30px"]}
       justify="space-between"
       >
         <Text 
           fontWeight="bold" 
-          fontSize="2xl"
+          fontSize={["xl","2xl"]}
         >
           Tundê.dev
         </Text>
         <HStack
-          spacing="8"
+          spacing={["4", "8"]}
         >
           <NextLink href="/" passHref>
-            <Text 
+            <Text
+              fontSize={["xs", "md"]}
               fontWeight="400" 
               color="gray.300"
               _hover={{
@@ -40,6 +41,7 @@ export const Header = ({isHomePage}: HeaderProps) => {
 
           <NextLink href="/projects" passHref>
             <Text 
+              fontSize={["xs", "md"]}
               fontWeight="500"
               borderBottomRadius="4"
               borderBottomWidth="medium"
@@ -58,6 +60,7 @@ export const Header = ({isHomePage}: HeaderProps) => {
             isExternal
           >
             <Text 
+              fontSize={["xs", "md"]}
               fontWeight="400"
               color="gray.300"
               _hover={{
@@ -77,23 +80,24 @@ export const Header = ({isHomePage}: HeaderProps) => {
 
   return(
     <HStack
-    px="30px"
+    px={["","30px"]}
     justify="space-between"
   >
       <Text 
         fontWeight="bold" 
-        fontSize="2xl"
+        fontSize={["xl","2xl"]}
       >
         Tundê.dev
       </Text>
       <HStack
-        spacing="8"
+        spacing={["4", "8"]}
       >
         <NextLink 
           href="/" 
           passHref
         >
           <Text 
+            fontSize={["xs", "md"]}
             fontWeight="500"
             borderBottomRadius="4"
             borderBottomWidth="medium"
@@ -107,7 +111,8 @@ export const Header = ({isHomePage}: HeaderProps) => {
           </Text>
         </NextLink>
         <NextLink href="/projects" passHref>
-          <Text 
+          <Text
+            fontSize={["xs", "md"]}
             fontWeight="400" 
             color="gray.300"
             _hover={{
@@ -125,7 +130,8 @@ export const Header = ({isHomePage}: HeaderProps) => {
             href="https://spacetraveling-tun.vercel.app/" 
             isExternal
           >
-            <Text 
+            <Text
+              fontSize={["xs", "md"]}
               fontWeight="400"
               color="gray.300"
               _hover={{
