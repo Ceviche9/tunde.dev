@@ -1,6 +1,8 @@
 import {useState, useRef} from "react"
 import {Flex, HStack, Text, Divider, Button, Spinner, Stack, ScaleFade} from "@chakra-ui/react"
 
+import Head from "next/head"
+
 import {
   SiGithub as Github,
 } from "react-icons/si"
@@ -85,97 +87,121 @@ export default function Projects({projects, next_page}: ProjectsProps) {
   }
 
   return(
-    <Flex
-      w="100%"
-      flexDirection="column"
-      p={["5", "10"]}
-    >
-      <Header isHomePage={false}/>
-      <Divider borderColor="gray.800"/>
-
+    <>
+      <Head>
+        <title>Tunde.dev | Projects</title>
+      </Head>
       <Flex
-        mt="3"
+        w="100%"
         flexDirection="column"
-        justify="center"
-        align="center"
+        p={["5", "10"]}
       >
-        {projectsArray.map((project, index) => {
-          return(
-            <ScaleFade
-              key={index}
-              initialScale={0.9}
-              in={enterCount > 0}
-              whileHover={{ scale: 1.05 }}
-            >
-              <Stack
-                ref={ref}
-                direction={['column', 'row']}
-                px={["4", "4"]}
-                py={["5", ""]}
-                mt="10"
-                w={[345 ,778]}
-                h={[582 ,415]}
-                borderRadius="20"
-                borderBottomWidth="medium"
-                borderColor="purple.600"
-                bgColor="purple.900"
-                align="center"
-                justify="space-between"
-              >
-                <Banner image={project.banner}/>
-                <Flex
-                  flex="1"
-                  justify="flex-end"
-                  h={315}
-                  flexDirection="column"
-                >
-                  <About title={project.title} about={project.about}/>
+        <Header isHomePage={false}/>
+        <Divider borderColor="gray.800"/>
 
-                  <Flex 
-                    mt="2" 
-                    px="5"
+        <Flex
+          mt="3"
+          flexDirection="column"
+          justify="center"
+          align="center"
+        >
+          {projectsArray.map((project, index) => {
+            return(
+              <ScaleFade
+                key={index}
+                initialScale={0.9}
+                in={enterCount > 0}
+                whileHover={{ scale: 1.05 }}
+              >
+                <Stack
+                  ref={ref}
+                  direction={['column', 'row']}
+                  px={["4", "4"]}
+                  py={["5", ""]}
+                  mt="10"
+                  w={[345 ,778]}
+                  h={[582 ,415]}
+                  borderRadius="20"
+                  borderBottomWidth="medium"
+                  borderColor="purple.600"
+                  bgColor="purple.900"
+                  align="center"
+                  justify="space-between"
+                >
+                  <Banner image={project.banner}/>
+                  <Flex
+                    flex="1"
+                    justify="flex-end"
+                    h={315}
                     flexDirection="column"
                   >
-                    {project.technologies.map((data, index) => {
-                      return(
-                        <Technologies key={index} title={data[0]}/>
-                      )
-                    })}
-                  </Flex>
-                  
-                  <Flex
-                    mt="2"
-                    justify="center"
-                  >
-                    <Button
-                      p="3"
-                      bgColor="purple.900"
-                      borderWidth="medium"
-                      borderColor="purple.700"
-                      _hover={{
-                        bgColor: "purple.700"
-                      }}
-                      size='lg'
-                      onClick={() => handleClickButton(project.link)}
+                    <About title={project.title} about={project.about}/>
+
+                    <Flex 
+                      mt="2" 
+                      px="5"
+                      flexDirection="column"
                     >
-                      Acessar repositório
-                    </Button>
+                      {project.technologies.map((data, index) => {
+                        return(
+                          <Technologies key={index} title={data[0]}/>
+                        )
+                      })}
+                    </Flex>
+                    
+                    <Flex
+                      mt="2"
+                      justify="center"
+                    >
+                      <Button
+                        p="3"
+                        bgColor="purple.900"
+                        borderWidth="medium"
+                        borderColor="purple.700"
+                        _hover={{
+                          bgColor: "purple.700"
+                        }}
+                        size='lg'
+                        onClick={() => handleClickButton(project.link)}
+                      >
+                        Acessar repositório
+                      </Button>
+                    </Flex>
+
                   </Flex>
+                </Stack>
+              </ScaleFade>
+            )
+          })}
 
-                </Flex>
-              </Stack>
-            </ScaleFade>
-          )
-        })}
+          { showLoading 
+            ? <Spinner mt="10" color='purple.500' size="lg"/>
 
-        { showLoading 
-          ? <Spinner mt="10" color='purple.500' size="lg"/>
-
-          : nextPage ?
-            <Flex
+            : nextPage ?
+              <Flex
+                mt="10"
+              >
+                <Button
+                  w={300}
+                  p="3"
+                  bgColor="#0e0116"
+                  borderWidth="medium"
+                  borderColor="purple.700"
+                  _hover={{
+                    bgColor: "purple.700"
+                  }}
+                  size='3xl'
+                  onClick={() => handleLoadPosts()}
+                >
+                  Carregar mais
+                </Button>
+              </Flex>
+            : 
+              <Flex
               mt="10"
             >
               <Button
+                rightIcon={<LInkIcon size={18}/>}
                 w={300}
                 p="3"
                 bgColor="#0e0116"
@@ -185,44 +211,25 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                   bgColor: "purple.700"
                 }}
                 size='3xl'
-                onClick={() => handleLoadPosts()}
+                onClick={() => handleClickButton("https://github.com/Ceviche9")}
               >
-                Carregar mais
+                Acessar Github
               </Button>
             </Flex>
-          : 
-            <Flex
-            mt="10"
-          >
-            <Button
-              rightIcon={<LInkIcon size={18}/>}
-              w={300}
-              p="3"
-              bgColor="#0e0116"
-              borderWidth="medium"
-              borderColor="purple.700"
-              _hover={{
-                bgColor: "purple.700"
-              }}
-              size='3xl'
-              onClick={() => handleClickButton("https://github.com/Ceviche9")}
-            >
-              Acessar Github
-            </Button>
-          </Flex>
-        }
+          }
 
+        </Flex>
+        <HStack 
+          mt="20"
+          as="footer"
+          align="flex-start"
+          justify="center"
+        >
+          <Text fontSize="xs" color="gray.100">Made by Tundê Cavalcante</Text>
+          <Github />
+        </HStack>
       </Flex>
-      <HStack 
-        mt="20"
-        as="footer"
-        align="flex-start"
-        justify="center"
-      >
-        <Text fontSize="xs" color="gray.100">Made by Tundê Cavalcante</Text>
-        <Github />
-      </HStack>
-    </Flex>
+    </>
   )
 }
 
