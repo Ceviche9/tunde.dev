@@ -1,5 +1,5 @@
 import {useState} from "react"
-import {Flex, HStack, Text, Divider, Button, Spinner} from "@chakra-ui/react"
+import {Flex, HStack, Text, Divider, Button, Spinner, Stack} from "@chakra-ui/react"
 
 import {
   SiGithub as Github,
@@ -77,7 +77,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
     <Flex
       w="100%"
       flexDirection="column"
-      p="10"
+      p={["5", "10"]}
     >
       <Header isHomePage={false}/>
       <Divider borderColor="gray.800"/>
@@ -90,12 +90,14 @@ export default function Projects({projects, next_page}: ProjectsProps) {
       >
         {projectsArray.map((project, index) => {
           return(
-            <HStack
+            <Stack
+              direction={['column', 'row']}
               key={index}
-              px="4"
+              px={["4", "4"]}
+              py={["5", ""]}
               mt="10"
-              w={778}
-              h={415}
+              w={[345 ,778]}
+              h={[582 ,415]}
               borderRadius="20"
               borderBottomWidth="medium"
               borderColor="purple.600"
@@ -144,7 +146,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                 </Flex>
 
               </Flex>
-            </HStack>
+            </Stack>
           )
         })}
 
