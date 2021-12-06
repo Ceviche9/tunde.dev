@@ -24,7 +24,7 @@ export const SkillsContainer = () => {
             key={skill}
           >
             <motion.div
-              whileHover={{ scale: 1.12, transition: {delay: 0.1, duration: 0.2} }}
+              whileHover={{ scale: 1.12, transition: {delay: 0, duration: 0.2} }}
             >
               <Flex
                 align="center"

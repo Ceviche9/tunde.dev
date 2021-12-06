@@ -101,18 +101,18 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                   key={index} 
                   initial="hidden"
                   animate="visible"
-                  whileHover={{ scale: 1.03, transition: {delay: 0, duration: 0.1} }}
+                  whileHover={{ scale: 1.02, transition: {delay: 0, duration: 0.1} }}
                   variants={{
                     hidden: {
-                      scale: 0.7,
+                      scale: 0.5,
                       opacity: 0
                     },
                     visible: {
                       scale: 1,
                       opacity: 1,
                       transition: {
-                        delay: 0.2,
-                        duration: 0.2
+                        delay: 0.1,
+                        duration: 0.3
                       }
                     }
                   }}
