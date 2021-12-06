@@ -28,7 +28,10 @@ export const Header = ({isHomePage}: HeaderProps) => {
               fontWeight="400" 
               color="gray.300"
               _hover={{
-                cursor: "pointer"
+                cursor: "pointer",
+                borderBottomRadius: "4",
+                borderBottomWidth: "medium",
+                borderColor: "gray.500"
               }}
             >
               Sobre
@@ -40,9 +43,10 @@ export const Header = ({isHomePage}: HeaderProps) => {
               fontWeight="500"
               borderBottomRadius="4"
               borderBottomWidth="medium"
-              borderColor="gray.50"
+              borderColor="purple.500"
               _hover={{
-                cursor: "pointer",                
+                cursor: "pointer",
+                borderColor: "purple.300"               
               }}
             >
               Projetos
@@ -57,7 +61,10 @@ export const Header = ({isHomePage}: HeaderProps) => {
               fontWeight="400"
               color="gray.300"
               _hover={{
-                cursor: "pointer",                
+                cursor: "pointer",
+                borderBottomRadius: "4",
+                borderBottomWidth: "medium",
+                borderColor: "gray.500"     
               }}
             >
               Blog
@@ -90,10 +97,11 @@ export const Header = ({isHomePage}: HeaderProps) => {
             fontWeight="500"
             borderBottomRadius="4"
             borderBottomWidth="medium"
-            borderColor="gray.50"
+            borderColor="purple.500"
             _hover={{
-              cursor: "pointer"
-            }}  
+              cursor: "pointer",
+              borderColor: "purple.300"               
+            }}
           >
             Sobre
           </Text>
@@ -103,9 +111,14 @@ export const Header = ({isHomePage}: HeaderProps) => {
             fontWeight="400" 
             color="gray.300"
             _hover={{
-              cursor: "pointer"
+              cursor: "pointer",
+              borderBottomRadius: "4",
+              borderBottomWidth: "medium",
+              borderColor: "gray.500" 
             }}
-          >Projetos</Text>
+          >
+            Projetos
+          </Text>
         </NextLink>
 
         <Link 
@@ -116,7 +129,10 @@ export const Header = ({isHomePage}: HeaderProps) => {
               fontWeight="400"
               color="gray.300"
               _hover={{
-                cursor: "pointer",                
+                cursor: "pointer",
+                borderBottomRadius: "4",
+                borderBottomWidth: "medium",
+                borderColor: "gray.500"                
               }}
             >
               Blog
