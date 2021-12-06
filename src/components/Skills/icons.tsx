@@ -11,11 +11,9 @@ import {
   SiTypescript as Typescript,
   SiNodedotjs as Node,
   SiPostgresql as Postgresql,
-  SiFigma as Figma,
-  SiJest as Jest,
+  SiDocker as Docker,
   SiGit as Git,
-  SiGithub as Github,
-  SiLinux as Linux,
+  SiMaterialui as MaterialUi
 } from 'react-icons/si';
 
 export const icons = {
@@ -25,13 +23,13 @@ export const icons = {
   Postgresql,
   React,
   Typescript,
-  Jest,
+  Docker,
   Next,
   Git,
   Sequelize,
   Sass,
   // Html,
   // Css,
-  Github,
+  MaterialUi,
   // Linux,
 };
