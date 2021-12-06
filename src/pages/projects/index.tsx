@@ -1,11 +1,13 @@
-import {useState} from "react"
-import {Flex, HStack, Text, Divider, Button, Spinner, Stack} from "@chakra-ui/react"
+import {useState, useRef} from "react"
+import {Flex, HStack, Text, Divider, Button, Spinner, Stack, ScaleFade} from "@chakra-ui/react"
 
 import {
   SiGithub as Github,
 } from "react-icons/si"
 
 import {FiExternalLink as LInkIcon} from "react-icons/fi"
+
+import { useInViewport } from "react-in-viewport";
 
 import {Banner} from "../../components/Banner"
 import {About} from "../../components/About"
@@ -35,6 +37,7 @@ type ProjectsProps = {
 
 export default function Projects({projects, next_page}: ProjectsProps) {
   const route = useRouter()
+  const ref = useRef(null);
   const [projectsArray, setProjectsArray] = useState<ProjectDataProps[]>(projects);
   const [nextPage, setNextPage] = useState(next_page);
   const [showLoading, setShowLoading] = useState(false);
@@ -66,6 +69,13 @@ export default function Projects({projects, next_page}: ProjectsProps) {
     }, 200);
   };
 
+  const { enterCount } = useInViewport(
+    ref,
+    { rootMargin: "500px" },
+    { disconnectOnLeave: false },
+    {}
+  );
+
   function handleLoadPosts() {
     loadProjects()
   }
@@ -91,63 +101,70 @@ export default function Projects({projects, next_page}: ProjectsProps) {
       >
         {projectsArray.map((project, index) => {
           return(
-            <Stack
-              direction={['column', 'row']}
+            <ScaleFade
               key={index}
-              px={["4", "4"]}
-              py={["5", ""]}
-              mt="10"
-              w={[345 ,778]}
-              h={[582 ,415]}
-              borderRadius="20"
-              borderBottomWidth="medium"
-              borderColor="purple.600"
-              bgColor="purple.900"
-              align="center"
-              justify="space-between"
+              initialScale={0.9}
+              in={enterCount > 0}
+              whileHover={{ scale: 1.05 }}
             >
-              <Banner image={project.banner}/>
-              <Flex
-                flex="1"
-                justify="flex-end"
-                h={315}
-                flexDirection="column"
+              <Stack
+                ref={ref}
+                direction={['column', 'row']}
+                px={["4", "4"]}
+                py={["5", ""]}
+                mt="10"
+                w={[345 ,778]}
+                h={[582 ,415]}
+                borderRadius="20"
+                borderBottomWidth="medium"
+                borderColor="purple.600"
+                bgColor="purple.900"
+                align="center"
+                justify="space-between"
               >
-                <About title={project.title} about={project.about}/>
-
-                <Flex 
-                  mt="2" 
-                  px="5"
+                <Banner image={project.banner}/>
+                <Flex
+                  flex="1"
+                  justify="flex-end"
+                  h={315}
                   flexDirection="column"
                 >
-                  {project.technologies.map((data, index) => {
-                    return(
-                      <Technologies key={index} title={data[0]}/>
-                    )
-                  })}
-                </Flex>
-                
-                <Flex
-                  mt="2"
-                  justify="center"
-                >
-                  <Button
-                    p="3"
-                    bgColor="purple.900"
-                    borderWidth="medium"
-                    borderColor="purple.700"
-                    _hover={{
-                      bgColor: "purple.700"
-                    }}
-                    size='lg'
-                    onClick={() => handleClickButton(project.link)}
-                  >
-                    Acessar repositório
-                  </Button>
-                </Flex>
+                  <About title={project.title} about={project.about}/>
 
-              </Flex>
-            </Stack>
+                  <Flex 
+                    mt="2" 
+                    px="5"
+                    flexDirection="column"
+                  >
+                    {project.technologies.map((data, index) => {
+                      return(
+                        <Technologies key={index} title={data[0]}/>
+                      )
+                    })}
+                  </Flex>
+                  
+                  <Flex
+                    mt="2"
+                    justify="center"
+                  >
+                    <Button
+                      p="3"
+                      bgColor="purple.900"
+                      borderWidth="medium"
+                      borderColor="purple.700"
+                      _hover={{
+                        bgColor: "purple.700"
+                      }}
+                      size='lg'
+                      onClick={() => handleClickButton(project.link)}
+                    >
+                      Acessar repositório
+                    </Button>
+                  </Flex>
+
+                </Flex>
+              </Stack>
+            </ScaleFade>
           )
         })}
 
