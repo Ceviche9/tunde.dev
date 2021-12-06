@@ -71,7 +71,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
 
   const { enterCount } = useInViewport(
     ref,
-    { rootMargin: "500px" },
+    { rootMargin: "600px" },
     { disconnectOnLeave: false },
     {}
   );
