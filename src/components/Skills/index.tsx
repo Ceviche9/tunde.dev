@@ -46,7 +46,7 @@ export const SkillsContainer = () => {
   return(
     <Grid
       templateRows='repeat(2, 1fr)'
-      templateColumns={['repeat(1, 1fr)', 'repeat(4, 1fr)']}
+      templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)','repeat(4, 1fr)']}
       gap={10}
     >
       {skills.map(skill => {
@@ -68,7 +68,7 @@ export const SkillsContainer = () => {
                 p="10"
                 h={160}
                 w={160}
-                bgColor="#150121"
+                bgColor={["#290240","#150121"]}
                 borderBottomWidth="medium"
                 borderColor="purple.700"
                 onMouseEnter={() => setShowLabel(true)}

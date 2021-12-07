@@ -125,16 +125,16 @@ export default function Home() {
           <Divider borderColor="gray.800"/>
 
           <Stack
-            px="25px"
+            px={["10px", "25px"]}
             mt="5" 
             direction="column"
           >
             <Text
               fontSize={["md", "xl"]}
-              fontWeight="400"
+              fontWeight={["500","400"]}
               color="gray.100"
             >
-              Em janeiro de 2020 decidi que não queria mais cursar licenciatura em Química, pois me identificava muito mais
+              Em janeiro de 2020 decidi que não fazia mais sentido cursar licenciatura em Química, pois me identificava muito mais
               com o curso de Ciência de Computação. Então comecei a me planejar para abrir mão de 4 semestres do curso de 
               licenciatura e esperar o edital de transferência interna da minha faculdade (IFCE). Infelizmente, com a 
               pandemia do Covid-19 os editais de transferências foram suspenso por um tempo indeterminado, portanto, 
@@ -142,7 +142,7 @@ export default function Home() {
             </Text>
             <Text
               fontSize={["md", "xl"]}
-              fontWeight="400"
+              fontWeight={["500","400"]}
               color="gray.100"
             >
               Desenvolvedor full stack apaixonado pelas tecnologias de desenvolvimento back-end, front-end e mobile.
