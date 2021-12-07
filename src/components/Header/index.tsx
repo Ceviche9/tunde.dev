@@ -1,157 +1,45 @@
-import {HStack, Text, Link} from "@chakra-ui/react"
+import {useBreakpointValue, IconButton, Icon, HStack, Flex} from "@chakra-ui/react"
+import { useSidebarDrawer } from "../../hooks/SidebarDrawerContext"
 
-import NextLink from "next/link"
-import {GiCat as Cat} from "react-icons/gi"
+import {WideVersionHeader} from "./WideversionHeader"
+import { RiMenuLine } from 'react-icons/ri';
+
+import {Logo} from "./logo"
 
 type HeaderProps = {
   isHomePage: boolean
 }
 
 export const Header = ({isHomePage}: HeaderProps) => {
-  if(!isHomePage) {
+  const {onOpen} = useSidebarDrawer()
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  })
+
+  if(isWideVersion) {
+    if(isHomePage) {
+      return (
+        <WideVersionHeader isHomePage/>
+      )
+    }
     return (
-      <HStack
-      px={["","30px"]}
-      justify="space-between"
-      >
-        <HStack>
-          <Text
-            fontWeight="bold" 
-            fontSize={["xl","2xl"]}
-          >
-            Tundê.dev
-          </Text>
-          <Cat size={25}/>
-        </HStack>
-        <HStack
-          spacing={["4", "8"]}
-        >
-          <NextLink href="/" passHref>
-            <Text
-              fontSize={["xs", "md"]}
-              fontWeight="400" 
-              color="gray.300"
-              _hover={{
-                cursor: "pointer",
-                borderBottomRadius: "4",
-                borderBottomWidth: "medium",
-                borderColor: "gray.500"
-              }}
-            >
-              Sobre
-            </Text>
-          </NextLink>
-
-          <NextLink href="/projects" passHref>
-            <Text 
-              fontSize={["xs", "md"]}
-              fontWeight="500"
-              borderBottomRadius="4"
-              borderBottomWidth="medium"
-              borderColor="purple.500"
-              _hover={{
-                cursor: "pointer",
-                borderColor: "purple.300"               
-              }}
-            >
-              Projetos
-            </Text>
-          </NextLink>
-
-          <Link 
-            href="https://spacetraveling-tun.vercel.app/" 
-            isExternal
-          >
-            <Text 
-              fontSize={["xs", "md"]}
-              fontWeight="400"
-              color="gray.300"
-              _hover={{
-                cursor: "pointer",
-                borderBottomRadius: "4",
-                borderBottomWidth: "medium",
-                borderColor: "gray.500"     
-              }}
-            >
-              Blog
-            </Text>
-          </Link>
-        </HStack>
-      </HStack>
+      <WideVersionHeader/>
     )
   }
+  return (
+    <HStack justify="space-between">      
+        <IconButton
+        aria-label="Open navigation"
+        icon={<Icon as={RiMenuLine}/>}
+        fontSize="24"
+        variant="unstyled" // para tirar background e borda
+        onClick={onOpen}
+        mr="2"
+        />
 
-  return(
-    <HStack
-    px={["","30px"]}
-    justify="space-between"
-  >
-      <HStack>
-        <Text
-          fontWeight="bold" 
-          fontSize={["xl","2xl"]}
-        >
-          Tundê.dev
-        </Text>
-        <Cat size={25}/>
-      </HStack>
-      <HStack
-        spacing={["4", "8"]}
-      >
-        <NextLink 
-          href="/" 
-          passHref
-        >
-          <Text 
-            fontSize={["xs", "md"]}
-            fontWeight="500"
-            borderBottomRadius="4"
-            borderBottomWidth="medium"
-            borderColor="purple.500"
-            _hover={{
-              cursor: "pointer",
-              borderColor: "purple.300"               
-            }}
-          >
-            Sobre
-          </Text>
-        </NextLink>
-        <NextLink href="/projects" passHref>
-          <Text
-            fontSize={["xs", "md"]}
-            fontWeight="400" 
-            color="gray.300"
-            _hover={{
-              cursor: "pointer",
-              borderBottomRadius: "4",
-              borderBottomWidth: "medium",
-              borderColor: "gray.500" 
-            }}
-          >
-            Projetos
-          </Text>
-        </NextLink>
-
-        <Link 
-            href="https://spacetraveling-tun.vercel.app/" 
-            isExternal
-          >
-            <Text
-              fontSize={["xs", "md"]}
-              fontWeight="400"
-              color="gray.300"
-              _hover={{
-                cursor: "pointer",
-                borderBottomRadius: "4",
-                borderBottomWidth: "medium",
-                borderColor: "gray.500"                
-              }}
-            >
-              Blog
-            </Text>
-          </Link>
-
-      </HStack>
+      <Logo/>
     </HStack>
   )
+
 }

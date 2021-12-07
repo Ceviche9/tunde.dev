@@ -16,6 +16,7 @@ import {AiOutlineMail as Mail} from "react-icons/ai"
 
 import {SkillsContainer} from "../components/Skills"
 import {Header} from "../components/Header"
+import {Sidebar} from "../components/Sidebar"
 
 import Image from "next/image"
 import { LinkComponent } from '../components/Link/index';
@@ -32,6 +33,7 @@ export default function Home() {
         p={["5", "10"]}
       >
         <Header isHomePage={true}/>
+        <Sidebar isHomePage={true}/>
         <Divider borderColor="gray.800"/>
 
         <Flex

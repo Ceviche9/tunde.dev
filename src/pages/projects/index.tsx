@@ -16,6 +16,8 @@ import {About} from "../../components/About"
 import {Technologies} from "../../components/Technologies"
 import {Header} from "../../components/Header"
 
+import {Sidebar} from "../../components/Sidebar"
+
 import { GetStaticProps } from "next"
 import { getPrismicClient } from '../../services/prismic';
 
@@ -87,6 +89,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
         p={["5", "10"]}
       >
         <Header isHomePage={false}/>
+        <Sidebar />
         <Divider borderColor="gray.800"/>
 
         <Flex
