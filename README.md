@@ -4,7 +4,7 @@
 
 <p align="center">My portfolio</p>
 
-![image](https://user-images.githubusercontent.com/83431609/144779962-ffffb3a8-ce01-4f5c-bcae-d663449406e3.png)
+![image](https://user-images.githubusercontent.com/83431609/145084668-406b7f80-9141-4172-99f4-31b886446b69.png)
 
 
 ## 📄 About the project
