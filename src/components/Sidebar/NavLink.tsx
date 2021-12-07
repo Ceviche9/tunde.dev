@@ -2,7 +2,6 @@
 import {Button, Icon} from "@chakra-ui/react"
 import { NavLinkProps } from "./protocols/SidebarProtocols"
 
-import NextLink from "next/link"
 import { useRouter } from 'next/router';
 
 export const NavLink = ({title, icon, href, isExternal = false}: NavLinkProps) => {
@@ -21,8 +20,6 @@ export const NavLink = ({title, icon, href, isExternal = false}: NavLinkProps) =
       p="3"
       justifyContent="flex-start"
       bgColor="#0e0116"
-      // borderBottomWidth="medium"
-      // borderColor="purple.700"
       _hover={{
         bgColor: "purple.700"
       }}

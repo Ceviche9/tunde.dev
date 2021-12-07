@@ -1,7 +1,5 @@
 
 import {
-  SiHtml5 as Html,
-  SiCss3 as Css,
   SiJavascript as Javascript,
   SiSass as Sass,
   SiSequelize as Sequelize,
@@ -10,7 +8,7 @@ import {
   SiNextdotjs as Next,
   SiTypescript as Typescript,
   SiNodedotjs as Node,
-  SiPostgresql as Postgresql,
+  SiPostgresql as PostgreSQL,
   SiDocker as Docker,
   SiGit as Git,
   SiMaterialui as MaterialUi
@@ -20,7 +18,7 @@ export const icons = {
   Javascript,
   Node,
   Yarn,
-  Postgresql,
+  PostgreSQL,
   React,
   Typescript,
   Docker,
@@ -28,8 +26,5 @@ export const icons = {
   Git,
   Sequelize,
   Sass,
-  // Html,
-  // Css,
   MaterialUi,
-  // Linux,
 };

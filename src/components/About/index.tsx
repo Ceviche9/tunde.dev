@@ -13,7 +13,7 @@ export const About = ({title, about}: TitleProps) => {
         <Text fontSize="lg" fontWeight="bold" color="gray.50">{title}</Text>
       </HStack>
 
-      <Flex mt="2" px="5">
+      <Flex mt={["1", "2"]} px="5">
         <Text color="gray.100" fontSize="sm">{about}</Text>
       </Flex>
     </>

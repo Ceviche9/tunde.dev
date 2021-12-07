@@ -122,7 +122,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                   >
                   <Stack
                     direction={['column', 'row']}
-                    px={["4", "4"]}
+                    px={["2", "3"]}
                     py={["5", ""]}
                     mt="10"
                     w={[345 ,778]}
@@ -163,8 +163,8 @@ export default function Projects({projects, next_page}: ProjectsProps) {
                           fontSize={["md","lg"]}
                           p={["5","3"]}
                           bgColor={["purple.600", "purple.900"]}
-                          borderWidth="medium"
-                          borderColor="purple.700"
+                          borderWidth={["thin", "medium"]}
+                          borderColor={["purple.500", "purple.700"]}
                           _hover={{
                             bgColor: "purple.700"
                           }}
