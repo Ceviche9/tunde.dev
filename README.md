@@ -5,6 +5,9 @@
 
 ![tundedev](https://user-images.githubusercontent.com/83431609/145085514-c013b40a-31c8-4f86-9918-391af2f12905.png)
 
+## Mobile
+
+![Mobile](https://user-images.githubusercontent.com/83431609/145086175-53d29666-c1e8-479a-b29f-871e659447d5.png)
 
 ## 📄 About the project
 
