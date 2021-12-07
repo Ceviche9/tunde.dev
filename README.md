@@ -2,9 +2,8 @@
     Tundê.Dev
 </h1>
 
-<p align="center">My portfolio</p>
 
-![image](https://user-images.githubusercontent.com/83431609/145084668-406b7f80-9141-4172-99f4-31b886446b69.png)
+![tundedev](https://user-images.githubusercontent.com/83431609/145085514-c013b40a-31c8-4f86-9918-391af2f12905.png)
 
 
 ## 📄 About the project
