@@ -17,6 +17,7 @@ Technologies and tools used in the development of the project:
 
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
+- [Framer Motion](https://www.framer.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Prismic CMS](https://prismic.io/)
