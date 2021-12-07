@@ -1,4 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {Flex, Text, HStack, VStack, Stack, Link, Divider} from "@chakra-ui/react"
+
 import { motion } from "framer-motion"
 
 import Head from "next/head"
@@ -107,7 +109,7 @@ export default function Home() {
           </motion.div>
         </Flex>
 
-        <Flex 
+        <Flex
           mt="10" 
           px="15px"
           flexDirection="column"
@@ -188,12 +190,12 @@ export default function Home() {
 
           <Divider borderColor="gray.800"/>
 
-          <Flex 
+          <Flex
             p="10"
             align="center"
             justify="center"
           >
-            <SkillsContainer />
+              <SkillsContainer />
           </Flex>
 
         </Flex>
