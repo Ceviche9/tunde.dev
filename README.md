@@ -2,8 +2,7 @@
     Tundê.Dev
 </h1>
 
-
-![tundedev](https://user-images.githubusercontent.com/83431609/145085514-c013b40a-31c8-4f86-9918-391af2f12905.png)
+![Capa](https://user-images.githubusercontent.com/83431609/145125506-d69180be-a588-4868-926b-e8306e79e14d.png)
 
 ## Mobile
 
