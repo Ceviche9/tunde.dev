@@ -4,7 +4,8 @@ import { SiGithub as Github} from "react-icons/si"
 
 export const Footer = () => {
   return (
-    <HStack 
+    <HStack
+      mt="16" 
       as="footer"
       align="flex-start"
       justify="center"
