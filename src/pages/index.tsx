@@ -105,7 +105,7 @@ export default function Home() {
                 width={420}
                 height={410}
                 alt="Dev"
-                src="/images/dev.svg"
+                src="/images/tunde.svg"
               />
             </Flex>
           </motion.div>
