@@ -10,8 +10,10 @@ type HeaderProps = {
   isHomePage: boolean
 }
 
+// A header se comporta e forma diferente dependendo od tamanho da tela.
 export const Header = ({isHomePage}: HeaderProps) => {
   const {onOpen} = useSidebarDrawer()
+  // Para verificar se a tela é mobile ou wide.
   const isWideVersion = useBreakpointValue({
     base: false,
     lg: true,
@@ -27,6 +29,7 @@ export const Header = ({isHomePage}: HeaderProps) => {
       <WideVersionHeader/>
     )
   }
+  // Caso a tela seja mobile, o menu será renderizaddo.
   return (
     <HStack justify="space-between">      
         <IconButton

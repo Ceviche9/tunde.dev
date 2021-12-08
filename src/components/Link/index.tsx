@@ -1,31 +1,42 @@
-import {Flex, Link} from "@chakra-ui/react"
-
-import { motion } from "framer-motion"
-
 import { ReactNode } from "react"
+import {HStack} from "@chakra-ui/react"
 
-type LinkComponentProps = {
-  children: ReactNode
-  href: string
-}
+import {LinkComponent} from "./Link"
 
-export const LinkComponent = ({children, href}: LinkComponentProps) => {
+import {
+  SiGithub as Github,
+  SiLinkedin as Linkedin
+} from "react-icons/si"
+
+import {IoRocketSharp as Rocket} from "react-icons/io5"
+
+import {AiOutlineMail as Mail} from "react-icons/ai"
+
+
+export const HomePageLinks = () => {
   return (
-    <Link 
-    href={href}
-    isExternal
-  >
-    <motion.div whileHover={{ scale: 1.4, transition: {duration: 0.2} }}>
-      <Flex
-        p="1"
-        width={10}
-        height={10}
-        alignItems="center"
-        justifyContent="center"
-      >
-        {children}
-      </Flex>
-    </motion.div>
-  </Link>
+    <HStack
+      spacing="2"
+      mt="10"
+      align="center"
+      justify="flex-end"
+    >
+      <LinkComponent href={"https://www.linkedin.com/in/tund%C3%AA-cavalcante-1621441ba/"}>
+        <Linkedin size={23}/>
+      </LinkComponent>
+
+      <LinkComponent href={"https://github.com/Ceviche9"}>
+        <Github size={25}/>
+      </LinkComponent>
+
+      <LinkComponent href={"https://app.rocketseat.com.br/me/tunde-cavalcante-08588"}>
+        <Rocket size={30}/>
+      </LinkComponent>
+
+      <LinkComponent href={"mailto:ayotunde_sales@hotmail.com"}>
+        <Mail size={30}/>
+      </LinkComponent>
+  </HStack>
+
   )
 }

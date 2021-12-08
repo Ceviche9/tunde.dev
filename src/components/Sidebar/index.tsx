@@ -12,7 +12,7 @@ import { SidebarNav } from './SidebarNav';
 
 import {SidebarProps} from "./protocols/SidebarProtocols"
 
-export const Sidebar = ({isHomePage}: SidebarProps) => {
+export const Sidebar = ({isCurrentPage}: SidebarProps) => {
   const {isOpen, onClose} = useSidebarDrawer()
 
   return(
@@ -26,7 +26,7 @@ export const Sidebar = ({isHomePage}: SidebarProps) => {
           <DrawerCloseButton mt="6"/>
           <DrawerHeader>Navegação</DrawerHeader>
           <DrawerBody>
-            <SidebarNav isHomePage={isHomePage}/>
+            <SidebarNav isCurrentPage={isCurrentPage}/>
           </DrawerBody>
         </DrawerContent>
       </DrawerOverlay>
