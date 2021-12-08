@@ -1,5 +1,4 @@
 import { ElementType, ReactNode } from "react";
-import {LinkProps as ChakraLinkProps} from "@chakra-ui/react"
 
 export type NavSectionProps = {
   title: string
@@ -11,8 +10,9 @@ export interface NavLinkProps {
   title: string
   href: string
   isExternal?: boolean
+  isCurrentPage?: boolean
 }
 
 export type SidebarProps = {
-  isHomePage?: boolean
+  isCurrentPage?: boolean
 }

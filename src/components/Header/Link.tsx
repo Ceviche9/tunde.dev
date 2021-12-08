@@ -8,6 +8,7 @@ type LinkProps = {
 }
 
 export const LinkComponent = ({isSelected = false, title, href}: LinkProps) => {
+  // Caso o usuário esteja na página do link, a estilização será diferente.
   if(isSelected) {
     return(
       <NextLink href={href} passHref>

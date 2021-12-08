@@ -1,11 +1,11 @@
 import {HStack, Text, Flex} from "@chakra-ui/react"
 
-type TitleProps = {
+type AboutProps = {
   title: string
   about: string
 }
 
-export const About = ({title, about}: TitleProps) => {
+export const About = ({title, about}: AboutProps) => {
   return(
     <>
       <HStack justifySelf="flex-start">

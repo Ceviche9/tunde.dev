@@ -24,6 +24,7 @@ import { getPrismicClient } from '../../services/prismic';
 import {RichText} from "prismic-dom"
 
 import Prismic from '@prismicio/client';
+import { Footer } from '../../components/Footer/index';
 
 type ProjectDataProps = {
   link: string
@@ -226,15 +227,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
           }
 
         </Flex>
-        <HStack 
-          mt="20"
-          as="footer"
-          align="flex-start"
-          justify="center"
-        >
-          <Text fontSize="xs" color="gray.100">Made by Tundê Cavalcante</Text>
-          <Github />
-        </HStack>
+        <Footer/>
       </Flex>
     </>
   )
