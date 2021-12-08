@@ -6,7 +6,7 @@
 
 ## Mobile
 
-![Mobile](https://user-images.githubusercontent.com/83431609/145086175-53d29666-c1e8-479a-b29f-871e659447d5.png)
+![Mobile](https://user-images.githubusercontent.com/83431609/145126047-59d9df90-7c6f-4839-bf89-5855909deea1.png)
 
 ## 📄 About the project
 
