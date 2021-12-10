@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import router from 'next/router';
+
 import {Flex, Text, HStack, Divider} from "@chakra-ui/react"
 
 import Head from "next/head"
@@ -13,6 +16,11 @@ import {DevPhoto} from "../components/DevPhoto"
 
 
 export default function Home() {
+
+  useEffect(() => {
+    router.prefetch('/projects')
+  }, [])
+
   return (
     <>
       <Head>
