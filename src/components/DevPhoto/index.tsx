@@ -23,7 +23,8 @@ export const DevPhoto = () => {
       }
     }}>
       <Flex marginLeft={["6","16"]}>
-        <Image 
+        <Image
+          priority 
           width={420}
           height={410}
           alt="Dev"
