@@ -1,7 +1,5 @@
-import {Flex} from "@chakra-ui/react"
+import {Flex, Image} from "@chakra-ui/react"
 import { useBreakpointValue } from '@chakra-ui/react'
-
-import Image from "next/image"
 
 type BannerProps = {
   image: string
@@ -17,7 +15,6 @@ export const Banner = ({image}: BannerProps) => {
     <Flex>
       { isMobile ?
           <Image
-          priority
           width={305}
           height={213}
           alt="Banner"
@@ -25,7 +22,6 @@ export const Banner = ({image}: BannerProps) => {
         />
         :
         <Image
-          priority
           width={455}
           height={315}
           alt="Banner"
