@@ -7,6 +7,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
     "@chakra-ui/react": "^1.7.2",
     "@emotion/react": "^11",
@@ -21,10 +26,13 @@
     "react-intersection-observer": "^8.32.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@types/prismic-dom": "^2.1.1",
     "@types/react": "^17.0.37",
     "eslint": "8.4.0",
     "eslint-config-next": "12.0.6",
+    "husky": "^7.0.4",
     "typescript": "^4.5.2"
   }
 }
