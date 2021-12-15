@@ -13,6 +13,7 @@ import { HomePageLinks } from '../components/Link/index';
 import { Footer } from '../components/Footer/index';
 import { Greetings } from '../components/Greetings/index';
 import {DevPhoto} from "../components/DevPhoto"
+import { Courses } from '../components/Courses/index';
 
 
 export default function Home() {
@@ -61,6 +62,16 @@ export default function Home() {
           <AboutMe/>
 
           <HomePageLinks/>
+
+          <HStack>
+            <Text fontSize="2xl" fontWeight="400" color="purple.500">{'<'}</Text>
+            <Text fontSize={["2xl", "3xl"]} fontWeight="bold" color="gray.100">Cursos</Text>
+            <Text fontSize="2xl" fontWeight="400" color="purple.500">{'/>'}</Text>
+          </HStack>
+
+          <Divider borderColor="gray.800"/>
+          
+          <Courses />
 
           <HStack mt="10">
             <Text fontSize="2xl" fontWeight="400" color="purple.500">{'<'}</Text>
