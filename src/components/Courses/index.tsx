@@ -8,7 +8,7 @@ export const Courses = () => {
     <Grid
       mt="5"
       templateRows='repeat(2, 1fr)'
-      templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)','repeat(3, 1fr)']}
+      templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)','repeat(3, 1fr)']}
       gap={10} 
     >
       <Course
