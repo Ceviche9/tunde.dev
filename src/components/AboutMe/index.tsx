@@ -1,6 +1,6 @@
 import {Stack, Text} from "@chakra-ui/react"
 
-export const AboutMe = () => {
+export function AboutMe(): JSX.Element {
   return(
 
     <Stack

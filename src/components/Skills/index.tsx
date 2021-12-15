@@ -7,7 +7,7 @@ import { motion, useAnimation } from "framer-motion"
 
 import {icons} from "./icons"
 
-export const SkillsContainer = () => {
+export const SkillsContainer = (): JSX.Element => {
   const animate = useAnimation()
   const isMobile = useBreakpointValue({
     base: '1700px',
@@ -23,7 +23,7 @@ export const SkillsContainer = () => {
 
   useEffect(() => {
     if(inView) {
-      animate.start({
+      void animate.start({
         scale: 1,
         transition: { 
           type: 'spring',
@@ -32,7 +32,7 @@ export const SkillsContainer = () => {
         },
       })
     } else {
-      animate.start({
+      void animate.start({
         scale: 0.8,
         transition: { 
           type: 'spring',
@@ -71,8 +71,8 @@ export const SkillsContainer = () => {
                 bgColor={["#290240","#150121"]}
                 borderBottomWidth="medium"
                 borderColor="purple.700"
-                onMouseEnter={() => setShowLabel(true)}
-                onMouseLeave={() => setShowLabel(false)}
+                onMouseEnter={() => { setShowLabel(true); }}
+                onMouseLeave={() => { setShowLabel(false); }}
                 borderRadius="25"
                 _hover={{
                   borderWidth: "medium",

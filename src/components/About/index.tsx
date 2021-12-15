@@ -5,7 +5,7 @@ type AboutProps = {
   about: string
 }
 
-export const About = ({title, about}: AboutProps) => {
+export function About({title, about}: AboutProps): JSX.Element {
   return(
     <>
       <HStack justifySelf="flex-start">

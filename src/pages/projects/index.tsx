@@ -1,13 +1,9 @@
 import {useState} from "react"
-import {Flex, HStack, Text, Divider, Button, Spinner, Stack} from "@chakra-ui/react"
+import {Flex, Divider, Button, Spinner, Stack} from "@chakra-ui/react"
 
 import { motion } from "framer-motion"
 
 import Head from "next/head"
-
-import {
-  SiGithub as Github,
-} from "react-icons/si"
 
 import {FiExternalLink as LInkIcon} from "react-icons/fi"
 
@@ -18,7 +14,7 @@ import {Header} from "../../components/Header"
 
 import {Sidebar} from "../../components/Sidebar"
 
-import { GetStaticProps } from "next"
+import type { GetStaticProps } from "next"
 import { getPrismicClient } from '../../services/prismic';
 
 import {RichText} from "prismic-dom"
@@ -99,10 +95,10 @@ export default function Projects({projects, next_page}: ProjectsProps) {
           justify="center"
           align="center"
         >
-          {projectsArray.map((project, index) => {
+          {projectsArray.map((project) => {
             return(
                 <motion.div 
-                  key={index} 
+                  key={project.title} 
                   initial="hidden"
                   animate="visible"
                   whileHover={{ scale: 1.02, transition: {delay: 0, duration: 0.1} }}

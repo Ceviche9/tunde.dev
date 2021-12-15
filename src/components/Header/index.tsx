@@ -1,4 +1,4 @@
-import {useBreakpointValue, IconButton, Icon, HStack, Flex} from "@chakra-ui/react"
+import {useBreakpointValue, IconButton, Icon, HStack} from "@chakra-ui/react"
 import { useSidebarDrawer } from "../../hooks/SidebarDrawerContext"
 
 import {WideVersionHeader} from "./WideversionHeader"
@@ -11,7 +11,7 @@ type HeaderProps = {
 }
 
 // A header se comporta e forma diferente dependendo od tamanho da tela.
-export const Header = ({isHomePage}: HeaderProps) => {
+export function Header({isHomePage}: HeaderProps): JSX.Element {
   const {onOpen} = useSidebarDrawer()
   // Para verificar se a tela é mobile ou wide.
   const isWideVersion = useBreakpointValue({

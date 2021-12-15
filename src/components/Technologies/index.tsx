@@ -4,7 +4,7 @@ type TechnologiesProps = {
   title: string
 }
 
-export const Technologies = ({title}: TechnologiesProps) => {
+export const Technologies = ({title}: TechnologiesProps): JSX.Element => {
   return(
     <HStack justifySelf="flex-start">
       <Text fontSize="md" fontWeight="400" color="purple.300">{'>'}</Text>

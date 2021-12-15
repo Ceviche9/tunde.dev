@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 
 import Image from "next/image"
 
-export const Greetings = () => {
+export function Greetings(): JSX.Element {
   return (
     <motion.div 
       initial="hidden" 

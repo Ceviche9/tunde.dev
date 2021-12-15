@@ -2,14 +2,14 @@ import {Flex, Link as ChakraLink} from "@chakra-ui/react"
 
 import { motion } from "framer-motion"
 
-import { ReactNode } from "react"
+import type { ReactNode } from "react"
 
 type LinkComponentProps = {
   children: ReactNode
   href: string
 }
 
-export const LinkComponent = ({children, href}: LinkComponentProps) => {
+export function LinkComponent({children, href}: LinkComponentProps): JSX.Element {
   return (
     <ChakraLink 
     href={href}

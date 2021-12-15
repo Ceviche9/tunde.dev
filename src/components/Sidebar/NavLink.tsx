@@ -1,6 +1,6 @@
 
 import {Button, Icon} from "@chakra-ui/react"
-import { NavLinkProps } from "./protocols/SidebarProtocols"
+import type { NavLinkProps } from "./protocols/SidebarProtocols"
 
 import { useRouter } from 'next/router';
 
@@ -10,7 +10,7 @@ export const NavLink = ({
     href,
     isCurrentPage = false, 
     isExternal = false
-}: NavLinkProps) => {
+}: NavLinkProps): JSX.Element => {
   const router = useRouter()
 
   function handleClickButton(link: string, isExternal: boolean) {

@@ -6,7 +6,7 @@ import {HiCode} from "react-icons/hi"
 
 // import Image from "next/image"
 
-export const Loading = () => {
+export function Loading(): JSX.Element {
   return(
     <Flex
       h="100vh"

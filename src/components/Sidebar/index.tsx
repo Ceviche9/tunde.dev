@@ -1,5 +1,4 @@
-import { Box, 
-  useBreakpointValue, 
+import {
   Drawer, 
   DrawerOverlay, 
   DrawerContent, 
@@ -10,9 +9,9 @@ import { Box,
 import { useSidebarDrawer } from '../../hooks/SidebarDrawerContext';
 import { SidebarNav } from './SidebarNav';
 
-import {SidebarProps} from "./protocols/SidebarProtocols"
+import type {SidebarProps} from "./protocols/SidebarProtocols"
 
-export const Sidebar = ({isCurrentPage}: SidebarProps) => {
+export const Sidebar = ({isCurrentPage}: SidebarProps): JSX.Element => {
   const {isOpen, onClose} = useSidebarDrawer()
 
   return(
