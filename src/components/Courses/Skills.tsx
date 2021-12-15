@@ -7,7 +7,7 @@ type TechnologiesProps = {
 export const CourseSkills = ({title}: TechnologiesProps): JSX.Element => {
   return(
     <HStack justifySelf="flex-start">
-      <Text fontSize="md" fontWeight="400" color="purple.300">{'>'}</Text>
+      <Text fontSize="md" fontWeight="400" color="pink.500">{'>'}</Text>
       <Text 
         fontSize={["sm", "sm"]} 
         fontWeight="bold" 
