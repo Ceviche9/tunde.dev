@@ -19,13 +19,13 @@ export function AboutCourse({title, about, href}: AboutProps): JSX.Element {
             fontWeight="bold" 
             color="gray.50"
             _hover={{
-              color: "gray.100"
+              color: "purple.300"
             }}
           >{title}</Text>
         </HStack>
       </Link>
 
-      <Flex mt={["1", "2"]} px="5">
+      <Flex mt={["1", "2"]} px="2">
         <Text color="gray.100" fontSize="sm">{about}</Text>
       </Flex>
     </>

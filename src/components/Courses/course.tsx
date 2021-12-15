@@ -27,11 +27,12 @@ export const Course = ({about, title, children, where, status, coursesLink}: Cou
       direction="column"
       spacing={2}
       maxWidth={360}
-      bgColor="purple.900"
       p={4}
-      borderRadius={8}
+      borderRadius={25}
       borderBottomWidth="medium"
-      borderBottomColor="purple.500"
+      borderTopWidth="thin"
+      borderTopColor="pink.500"
+      borderBottomColor="pink.500"
       >
         <AboutCourse 
           title={title}
@@ -62,7 +63,7 @@ export const Course = ({about, title, children, where, status, coursesLink}: Cou
               Status:
             </Text>
             <Text
-              fontSize={["sm", "md"]} 
+              fontSize={["sm", "sm"]} 
               fontWeight="bold"
               color={statusColor}
             >
