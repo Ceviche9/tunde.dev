@@ -1,7 +1,7 @@
 import {Box, Stack, Text} from "@chakra-ui/react"
-import { NavSectionProps } from "./protocols/SidebarProtocols"
+import type { NavSectionProps } from "./protocols/SidebarProtocols"
 
-export const NavSection = ({title, children}: NavSectionProps) => {
+export const NavSection = ({title, children}: NavSectionProps): JSX.Element => {
   return(
     <Box>
       <Text fontWeight="bold" color="gray.400" fontSize="small">{title}</Text>

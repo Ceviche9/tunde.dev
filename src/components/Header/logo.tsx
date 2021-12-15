@@ -1,7 +1,7 @@
 import {HStack, Text} from "@chakra-ui/react"
 import {GiCat as Cat} from "react-icons/gi"
 
-export const Logo = () => {
+export function Logo(): JSX.Element {
   return(
     <HStack>
     <Text

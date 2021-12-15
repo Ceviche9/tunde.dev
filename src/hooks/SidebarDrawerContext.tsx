@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useDisclosure, UseDisclosureReturn } from "@chakra-ui/hooks";
+import type { UseDisclosureReturn } from "@chakra-ui/hooks";
+import { useDisclosure } from "@chakra-ui/hooks";
 import { useRouter } from "next/router";
-import { createContext, ReactNode, useContext, useEffect } from "react"
+import type { ReactNode} from "react";
+import { createContext, useContext, useEffect } from "react"
 
 type SidebarDrawerProps = {
   children: ReactNode
@@ -11,7 +14,7 @@ type SidebarDrawerContextData = UseDisclosureReturn
 
 const SidebarDrawerContext = createContext({} as SidebarDrawerContextData);
 
-export const SidebarDrawerProvider = ({children}: SidebarDrawerProps) => {
+export const SidebarDrawerProvider = ({children}: SidebarDrawerProps): JSX.Element => {
   const disclosure = useDisclosure()
   const router = useRouter()
 
