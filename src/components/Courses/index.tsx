@@ -8,8 +8,9 @@ export const Courses = () => {
     <Grid
       mt="5"
       templateRows='repeat(2, 1fr)'
+      px="20px"
       templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)','repeat(3, 1fr)']}
-      gap={10} 
+      gap={[4, 5, 10]} 
     >
       <Course
         title="Curso em Vídeo - Python"
