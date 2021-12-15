@@ -30,14 +30,14 @@ export default function Home() {
       <Flex
         w="100%"
         flexDirection="column"
-        p={["5", "10"]}
+        p={["1", "4", "5", "10"]}
       >
         <Header isHomePage={true}/>
         <Sidebar isCurrentPage />
         <Divider borderColor="gray.800"/>
 
         <Flex
-          px="55px"
+          px={["25px","35px","45px","55px"]}
           mt="35px"
           align="center"
           flexDirection="column"
@@ -48,7 +48,8 @@ export default function Home() {
 
         <Flex
           mt="10" 
-          px="15px"
+          px={["2px","5px","10px","15px"]}
+          justify="center"
           flexDirection="column"
         >
           <HStack>
@@ -82,7 +83,7 @@ export default function Home() {
           <Divider borderColor="gray.800"/>
 
           <Flex
-            p="10"
+            p={["1","3","5","10"]}
             align="center"
             justify="center"
           >

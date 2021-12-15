@@ -45,9 +45,10 @@ export const SkillsContainer = (): JSX.Element => {
 
   return(
     <Grid
+      px={["5px","25px","35px","45px"]}
       templateRows='repeat(2, 1fr)'
       templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)','repeat(4, 1fr)']}
-      gap={10}
+      gap={[2, 5, 8, 10]}
     >
       {skills.map(skill => {
         const Icon = icons[skill];
