@@ -11,7 +11,7 @@ import {
   SiPostgresql as PostgreSQL,
   SiDocker as Docker,
   SiGit as Git,
-  SiMaterialui as MaterialUi
+  SiChakraui as ChakraUi
 } from 'react-icons/si';
 
 export const icons = {
@@ -26,5 +26,5 @@ export const icons = {
   Git,
   Sequelize,
   Sass,
-  MaterialUi,
+  ChakraUi,
 };
