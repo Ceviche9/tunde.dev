@@ -1,11 +1,10 @@
-import {Flex, Image} from "@chakra-ui/react"
-import { useBreakpointValue } from '@chakra-ui/react'
+import {Flex, Image, useBreakpointValue} from "@chakra-ui/react"
 
 type BannerProps = {
   image: string
 }
 
-export const Banner = ({image}: BannerProps) => {
+export function Banner({image}: BannerProps): JSX.Element {
   const isMobile = useBreakpointValue({
     base: true,
     lg: false

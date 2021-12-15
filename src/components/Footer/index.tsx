@@ -2,7 +2,7 @@ import {HStack, Text} from "@chakra-ui/react"
 
 import { SiGithub as Github} from "react-icons/si"
 
-export const Footer = () => {
+export function Footer(): JSX.Element {
   return (
     <HStack
       mt="16" 
