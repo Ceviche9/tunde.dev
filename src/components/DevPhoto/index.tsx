@@ -22,7 +22,10 @@ export function DevPhoto(): JSX.Element {
         }
       }
     }}>
-      <Flex marginLeft={["6","16"]}>
+      <Flex 
+        justifyItems="center"
+        marginLeft={["8","6","16"]}
+      >
         <Image
           priority 
           width={420}

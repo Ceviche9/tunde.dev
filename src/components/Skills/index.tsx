@@ -45,9 +45,9 @@ export const SkillsContainer = (): JSX.Element => {
 
   return(
     <Grid
-      px={["5px","25px","35px","45px"]}
       templateRows='repeat(2, 1fr)'
       templateColumns={['repeat(2, 1fr)', 'repeat(2, 1fr)','repeat(4, 1fr)']}
+      px={["5px","10px","15px","20px"]}
       gap={[5, 5, 8, 10]}
     >
       {skills.map(skill => {
@@ -67,8 +67,8 @@ export const SkillsContainer = (): JSX.Element => {
                 align="center"
                 justify="center"
                 p="10"
-                h={160}
-                w={160}
+                h={[140, 160]}
+                w={[140, 160]}
                 bgColor={["#290240","#150121"]}
                 borderBottomWidth="medium"
                 borderColor="purple.700"
