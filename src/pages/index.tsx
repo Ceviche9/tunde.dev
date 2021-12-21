@@ -30,7 +30,8 @@ export default function Home() {
       <Flex
         w="100%"
         flexDirection="column"
-        p={["1", "4", "5", "10"]}
+        py={["2", "3", "4", "6"]}
+        px={["1", "4", "5", "10"]}
       >
         <Header isHomePage={true}/>
         <Sidebar isCurrentPage />
