@@ -31,8 +31,8 @@ export const Course = ({about, title, children, where, status, coursesLink}: Cou
       borderRadius={25}
       borderBottomWidth="medium"
       borderTopWidth="thin"
-      borderTopColor="pink.500"
-      borderBottomColor="pink.500"
+      borderTopColor="purple.800"
+      borderBottomColor="purple.700"
       >
         <AboutCourse 
           title={title}
@@ -56,12 +56,12 @@ export const Course = ({about, title, children, where, status, coursesLink}: Cou
             </Text>
           </HStack>
           <HStack>
-            <Text 
+            {/* <Text 
               fontSize="xs" 
               fontWeight="500"
             > 
               Status:
-            </Text>
+            </Text> */}
             <Text
               fontSize={["sm", "sm"]} 
               fontWeight="bold"
