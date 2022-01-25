@@ -13,30 +13,24 @@ export function AboutMe(): JSX.Element {
         fontWeight={["500","400"]}
         color="gray.100"
       >
-        Em janeiro de 2020 decidi que não fazia mais sentido cursar licenciatura em Química, pois me identificava muito mais
-        com o curso de Ciência de Computação. Então comecei a me planejar para abrir mão de 4 semestres do curso de 
-        licenciatura e esperar o edital de transferência interna da minha faculdade (IFCE). Infelizmente, com a 
-        pandemia do Covid-19 os editais de transferências foram suspenso por um tempo indeterminado, portanto, 
-        comecei por conta própria a mergulhar no mundo da tecnologia e do desenvolvimento de software.
+        Desenvolvedor, cearense, apaixonado por música, tecnologia e história. Desde 2021 focando em construir uma carreira
+        profissional no mundo do desenvolvimento de software, escrevendo códigos limpos e eficiente e escaláveis. Sou graduando
+        em Licenciatura em Química pelo IFCE, porém já fiz/faço alguns cursos na área de desenvolvimento.
       </Text>
       <Text
         fontSize={["md", "xl"]}
         fontWeight={["500","400"]}
         color="gray.100"
       >
-        Desenvolvedor full stack apaixonado pelas tecnologias de desenvolvimento back-end, front-end e mobile.
-        Atualmente estou cursando o Ignite na  
-        <Text 
-          as="a" 
-          color="green.400" 
-          href="https://www.rocketseat.com.br/ignite"
-          _hover={{
-            color: "purple.500"
-          }}
-        > Rocketseat </Text> 
-        e aprofundando meus conhecimentos em desenvolvimento, 
-        com foco na construção de interfaces declarativas no NextJs, escrevendo códigos limpos e eficiente e escaláveis. 
-        Sou apaixonado por música, tecnologia e quase toda semana adiciono um novo artigo ou tutorial no meu blog. 
+        Atualmente estou me aprofundando no desenvolvimento Frontend, com foco na construção de aplicações responsivas 
+        utilizando tecnologias de interface declarativa. Minhas techs favoritas são: Typescript, Next.js, Node e Chakra UI.
+      </Text>
+      <Text
+        fontSize={["md", "xl"]}
+        fontWeight={["500","400"]}
+        color="gray.100"
+      >
+        Você pode entrar em contato comigo através das minhas redes, basta clicar em um dos ícones aqui em baixo.
       </Text>
     </Stack>
   )
