@@ -45,7 +45,7 @@ export const Course = ({about, title, children, where, status, coursesLink}: Cou
               fontSize="xs" 
               fontWeight="500"
             > 
-              Empresa:
+              Instituição:
             </Text>
             <Text
               fontSize={["sm", "md"]} 
