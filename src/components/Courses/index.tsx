@@ -12,7 +12,7 @@ export const Courses = () => {
       justifyItems="center"
       templateRows='repeat(2, 1fr)'
       px={["","10px","15px","20px"]}
-      templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)','repeat(3, 1fr)']}
+      templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)','repeat(2, 1fr)', 'repeat(3, 1fr)']}
       gap={[4, 5, 10]} 
     >
         {CourseData.coursesData.map(course => {

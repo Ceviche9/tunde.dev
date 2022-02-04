@@ -1,13 +1,15 @@
 import { useEffect } from 'react';
+import type { SidebarProps } from '../components/Sidebar/protocols/SidebarProtocols';
+import dynamic from 'next/dynamic';
 import router from 'next/router';
 
-import {Flex, Text, HStack, Divider} from "@chakra-ui/react"
+import {Flex, Text, HStack, Divider, Box} from "@chakra-ui/react"
 
 import Head from "next/head"
 
 import {SkillsContainer} from "../components/Skills"
 import {Header} from "../components/Header"
-import {Sidebar} from "../components/Sidebar"
+// import {Sidebar} from "../components/Sidebar"
 import {AboutMe} from "../components/AboutMe"
 import { HomePageLinks } from '../components/Link/index';
 import { Footer } from '../components/Footer/index';
@@ -15,6 +17,9 @@ import { Greetings } from '../components/Greetings/index';
 import {DevPhoto} from "../components/DevPhoto"
 import { Courses } from '../components/Courses/index';
 
+const Sidebar = dynamic<SidebarProps>(() => {
+  return import('../components/Sidebar').then(mod => mod.Sidebar)
+})
 
 export default function Home() {
 
@@ -27,9 +32,10 @@ export default function Home() {
       <Head>
         <title>Tunde.dev | Home</title>
       </Head>
-      <Flex
-        w="100%"
-        flexDirection="column"
+      <Box
+        maxW={[600, 768, 992, 1120]} // 1350
+        mx="auto"
+        // flexDirection="column"
         py={["2", "3", "4", "6"]}
         px={["1", "4", "5", "10"]}
       >
@@ -48,6 +54,7 @@ export default function Home() {
         </Flex>
 
         <Flex
+          mx="auto"
           mt="10" 
           px={["2px","5px","10px","15px"]}
           justify="center"
@@ -95,7 +102,7 @@ export default function Home() {
 
         <Footer />
 
-      </Flex>
+      </Box>
     </>
   )
 }

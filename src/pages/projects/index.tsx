@@ -1,5 +1,5 @@
 import {useState} from "react"
-import {Flex, Divider, Button, Spinner, Stack} from "@chakra-ui/react"
+import {Flex, Divider, Button, Spinner, Stack, Box} from "@chakra-ui/react"
 
 import { motion } from "framer-motion"
 
@@ -80,7 +80,9 @@ export default function Projects({projects, next_page}: ProjectsProps) {
       <Head>
         <title>Tunde.dev | Projects</title>
       </Head>
-      <Flex
+      <Box
+        maxW={1120} // 1350
+        mx="auto"
         w="100%"
         flexDirection="column"
         p={["5", "10"]}
@@ -224,7 +226,7 @@ export default function Projects({projects, next_page}: ProjectsProps) {
 
         </Flex>
         <Footer/>
-      </Flex>
+      </Box>
     </>
   )
 }

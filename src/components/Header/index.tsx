@@ -31,7 +31,8 @@ export function Header({isHomePage}: HeaderProps): JSX.Element {
   }
   // Caso a tela seja mobile, o menu será renderizaddo.
   return (
-    <HStack justify="space-between">      
+    <HStack 
+      justify="space-between">      
         <IconButton
         aria-label="Open navigation"
         icon={<Icon as={RiMenuLine}/>}
