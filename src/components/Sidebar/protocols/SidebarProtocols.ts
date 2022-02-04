@@ -1,11 +1,11 @@
-import { ElementType, ReactNode } from "react";
+import type { ElementType, ReactNode } from "react";
 
 export type NavSectionProps = {
   title: string
   children: ReactNode
 }
 
-export interface NavLinkProps {
+export type NavLinkProps = {
   icon: ElementType
   title: string
   href: string
