@@ -37,7 +37,7 @@ export default function Home() {
         mx="auto"
         // flexDirection="column"
         py={["2", "3", "4", "6"]}
-        px={["1", "4", "5", "10"]}
+        // px={["1", "4", "5", "10"]}
       >
         <Header isHomePage={true}/>
         <Sidebar isCurrentPage />
@@ -56,7 +56,7 @@ export default function Home() {
         <Flex
           mx="auto"
           mt="10" 
-          px={["2px","5px","10px","15px"]}
+          px={["2px","3px","5px","10px"]}
           justify="center"
           flexDirection="column"
         >

@@ -1,7 +1,8 @@
 
 import {
   SiJavascript as Javascript,
-  SiSass as Sass,
+  // SiSass as Sass,
+  SiJest as Jest,
   SiSequelize as Sequelize,
   SiFramer as Framer,
   SiReact as React,
@@ -25,6 +26,6 @@ export const icons = {
   Next,
   Git,
   Sequelize,
-  Sass,
+  Jest,
   ChakraUi,
 };
