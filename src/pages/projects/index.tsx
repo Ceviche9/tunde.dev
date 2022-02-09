@@ -81,11 +81,11 @@ export default function Projects({projects, next_page}: ProjectsProps) {
         <title>Tunde.dev | Projects</title>
       </Head>
       <Box
-        maxW={1120} // 1350
+        maxW={[600, 768, 992, 1120]} // 1350
         mx="auto"
         w="100%"
         flexDirection="column"
-        p={["5", "10"]}
+        py={["2", "3", "4", "6"]}
       >
         <Header isHomePage={false}/>
         <Sidebar />
