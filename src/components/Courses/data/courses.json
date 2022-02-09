@@ -42,26 +42,6 @@
     },
     {
       "id": 3,
-      "title": "NLW 6 - Trilha React Native",
-      "where": "Rocketseat",
-      "coursesLink": "https://www.rocketseat.com.br/",
-      "status": "Completo",
-      "about": "Bootcamp sobre desenvolvimento mobile híbrido com react native, onde foi desenvolvida uma aplicação moderna para iOS e Android de forma nativa.",
-      "skills": [
-        "React Native",
-        "Typescript",
-        "Expo",
-        "Context API",
-        "Async Storage",
-        "Vector Icons",
-        "OAuth2 Discord",
-        "React Navigation Stack",
-        "React Native Gesture Handler",
-        "React Native Share"
-      ]
-    },
-    {
-      "id": 4,
       "title": "NLW 6 - Trilha NodeJs",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/",
@@ -78,7 +58,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "NLW 6 - Trilha React",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/",
@@ -94,8 +74,8 @@
       ]
     },
     {
-      "id": 6,
-      "title": "Ignite - Trilha React",
+      "id": 5,
+      "title": "Ignite - ReactJS",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/ignite",
       "status": "Completo",
@@ -108,6 +88,24 @@
         "Autenticação e autorização.",
         "Teste unitários.",
         "Deploy de aplicações."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Ignite - NodeJS",
+      "where": "Rocketseat",
+      "coursesLink": "https://www.rocketseat.com.br/",
+      "status": "Em andamento",
+      "about": "Programa de aceleração como foco em especialização, para quem já domina programação, nessa trilha mostra como construir construir arquiteturas escaláveis e simples para a web utilizando uma linguagem flexível e popular.",
+      "skills": [
+        "Conceitos do Node.js",
+        "Trabalhando com middlewares",
+        "Introdução ao SOLID",
+        "Documentando com Swagger",
+        "Database Queries",
+        "Testes unitários",
+        "Testes de integração",
+        "Trabalhando com refresh_token e e-mail"
       ]
     }
   ]
