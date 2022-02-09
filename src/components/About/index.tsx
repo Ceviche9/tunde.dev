@@ -1,6 +1,6 @@
 import {HStack, Text, Flex} from "@chakra-ui/react"
 
-type AboutProps = {
+export type AboutProps = {
   title: string
   about: string
 }
