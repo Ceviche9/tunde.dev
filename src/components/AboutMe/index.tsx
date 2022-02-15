@@ -22,8 +22,8 @@ export function AboutMe(): JSX.Element {
         fontWeight={["500","400"]}
         color="gray.100"
       >
-        Atualmente estou me aprofundando no desenvolvimento Frontend, com foco na construção de aplicações responsivas 
-        utilizando tecnologias de interface declarativa. Minhas techs favoritas são: Typescript, Next.js, Node e Chakra UI.
+        Atualmente estou me aprofundando no desenvolvimento back-end, com foco na construção de aplicações escaláveis 
+        utilizando NodeJS, seguindo os princípios SOLID, Clean Architecture e DDD.
       </Text>
       <Text
         fontSize={["md", "xl"]}
