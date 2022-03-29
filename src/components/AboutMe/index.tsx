@@ -14,8 +14,7 @@ export function AboutMe(): JSX.Element {
         color="gray.100"
       >
         Desenvolvedor, cearense, apaixonado por música, tecnologia e história. Desde 2021 focando em construir uma carreira
-        profissional no mundo do desenvolvimento de software, escrevendo códigos limpos, eficientes e escaláveis. Sou graduando
-        em Licenciatura em Química pelo IFCE, porém já fiz/faço alguns cursos na área de desenvolvimento.
+        profissional no mundo do desenvolvimento de software, escrevendo códigos limpos, eficientes e escaláveis.
       </Text>
       <Text
         fontSize={["md", "xl"]}
