@@ -55,7 +55,7 @@ export default function Home() {
 
         <Flex
           mx="auto"
-          mt="10" 
+          mt="2" 
           px={["2px","3px","5px","10px"]}
           justify="center"
           flexDirection="column"
