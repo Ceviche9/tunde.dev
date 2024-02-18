@@ -163,7 +163,7 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
                         color="white"
                         onClick={() => handleClickButton(project.link)}
                       >
-                        Mais informações
+                        More information
                       </Button>
                     </Flex>
                   </Flex>
@@ -189,7 +189,7 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
                 size="3xl"
                 onClick={() => handleLoadPosts()}
               >
-                Carregar mais
+                Load more projects
               </Button>
             </Flex>
           ) : (
@@ -206,8 +206,9 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
                 }}
                 size="3xl"
                 onClick={() => handleClickButton("https://github.com/Ceviche9")}
+                color="white"
               >
-                Acessar Github
+                See my github
               </Button>
             </Flex>
           )}

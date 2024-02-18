@@ -1,7 +1,7 @@
-import { VStack, Text } from "@chakra-ui/react"
-import { motion } from "framer-motion"
+import { VStack, Text, HStack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
-import Image from "next/image"
+import Image from "next/image";
 
 export function Greetings(): JSX.Element {
   return (
@@ -10,18 +10,18 @@ export function Greetings(): JSX.Element {
       animate="visible"
       variants={{
         hidden: {
-          scale: .3,
-          opacity: 0
+          scale: 0.3,
+          opacity: 0,
         },
         visible: {
           scale: 1,
           opacity: 1,
           transition: {
-            delay: .2
-          }
-        }
-      }}>
-
+            delay: 0.2,
+          },
+        },
+      }}
+    >
       <VStack>
         <motion.div whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}>
           <Text
@@ -30,21 +30,19 @@ export function Greetings(): JSX.Element {
             fontWeight="400"
             color="gray.200"
           >
-            <Image
-              src="/images/hi.gif"
-              alt="Olá"
-              width={28}
-              height={27}
-              layout="fixed"
-            />{' '}
-            Olá, eu sou
+            {""}
+            Hi, I am
           </Text>
         </motion.div>
-        <Text fontSize={["2xl", "5xl"]} fontWeight="bold" color="gray.50">Tundê Cavalcante</Text>
+        <Text fontSize={["2xl", "5xl"]} fontWeight="bold" color="gray.50">
+          Tundê Cavalcante
+        </Text>
         <motion.div whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}>
-          <Text fontSize={["xl", "2xl"]} fontWeight="400" color="gray.300">Desenvolvedor Back-end</Text>
+          <Text fontSize={["xl", "2xl"]} fontWeight="400" color="gray.300">
+            Software Developer
+          </Text>
         </motion.div>
       </VStack>
     </motion.div>
-  )
+  );
 }
