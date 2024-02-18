@@ -1,4 +1,3 @@
-
 import {
   SiJavascript as Javascript,
   // SiSass as Sass,
@@ -12,10 +11,13 @@ import {
   SiPostgresql as PostgreSQL,
   SiDocker as Docker,
   SiGit as Git,
-  SiChakraui as ChakraUi
-} from 'react-icons/si';
+  SiChakraui as ChakraUi,
+  SiNestjs as NestJs,
+  SiSpring as Spring,
+} from "react-icons/si";
+import { FaAws as AWS, FaJava as Java } from "react-icons/fa";
 
-export const icons = {
+export const icons = [
   Javascript,
   Node,
   React,
@@ -28,4 +30,27 @@ export const icons = {
   Prisma,
   Jest,
   ChakraUi,
-};
+  NestJs,
+  AWS,
+  Java,
+  Spring,
+];
+
+export const iconNames = [
+  "Javascript",
+  "Node",
+  "React",
+  "PostgreSQL",
+  "MongoDB",
+  "Typescript",
+  "Docker",
+  "Next",
+  "Git",
+  "Prisma",
+  "Jest",
+  "ChakraUi",
+  "NestJs",
+  "AWS",
+  "Java",
+  "Spring",
+];

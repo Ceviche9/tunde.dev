@@ -107,6 +107,60 @@
         "Testes de integração",
         "Trabalhando com refresh_token e e-mail"
       ]
+    },
+    {
+      "id": 7,
+      "title": "Formação Nest.js",
+      "where": "Alura",
+      "coursesLink": "https://www.alura.com.br",
+      "status": "Completo",
+      "about": "NestJS é um framework para construção de aplicações server-side eficientes, confiáveis e escalonáveis em Node.js. Ele usa o JavaScript moderno, mas é escrito com TypeScript, oferecendo o melhor de ambos os mundos: flexibilidade e tipagem forte.",
+      "skills": [
+        "Conceitos do Nest.js",
+        "API Restful",
+        "TypeORM",
+        "PostgreSQL",
+        "Repository Pattern",
+        "Redis",
+        "JWT",
+        "Logging"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Formação Java e Spring Boot",
+      "where": "Alura",
+      "coursesLink": "https://www.alura.com.br",
+      "status": "Completo",
+      "about": "Java Spring Boot (Spring Boot) é uma ferramenta que torna o desenvolvimento de aplicativos web e microsserviços com Spring Framework mais rápido e fácil.",
+      "skills": [
+        "API Rest em Java",
+        "Flyway",
+        "Spring boot",
+        "Spring Security",
+        "Princípios SOLID",
+        "Testes automatizados",
+        "Bean Validation",
+        "JWT"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Android com Kotlin: criando um app",
+      "where": "Alura",
+      "coursesLink": "https://www.alura.com.br",
+      "status": "Completo",
+      "about": "Kotlin é uma linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada, desenvolvida pela JetBrains em 2011.",
+      "skills": [
+        "Conceitos de Kotlin",
+        "O que é o Android",
+        "Criação e implementação de layouts com Constraint Layout",
+        "Listagem com RecyclerView",
+        "Utilização do padrão DAO",
+        "Técnicas de refatoração",
+        "Princípios SOLID",
+        "O que são Activities e como criá-las"
+      ]
     }
   ]
 }
