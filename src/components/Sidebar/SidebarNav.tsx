@@ -9,7 +9,7 @@ import type { SidebarProps } from "./protocols/SidebarProtocols";
 export const SidebarNav = ({ isCurrentPage }: SidebarProps): JSX.Element => {
   return (
     <Stack spacing="12" align="flex-start">
-      <NavSection title="GERAL">
+      <NavSection title="">
         <Stack direction="column" spacing="3">
           {isCurrentPage ? (
             <>

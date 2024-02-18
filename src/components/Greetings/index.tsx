@@ -24,15 +24,23 @@ export function Greetings(): JSX.Element {
     >
       <VStack>
         <motion.div whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}>
-          <Text
-            paddingRight="5"
-            fontSize="2xl"
-            fontWeight="400"
-            color="gray.200"
-          >
-            {""}
-            Hi, I am
-          </Text>
+          <HStack>
+            <Image
+              src="/images/hi.gif"
+              alt="Olá"
+              width={28}
+              height={27}
+              layout="fixed"
+            />
+            <Text
+              paddingRight="5"
+              fontSize="2xl"
+              fontWeight="400"
+              color="gray.200"
+            >
+              Hi, i am
+            </Text>
+          </HStack>
         </motion.div>
         <Text fontSize={["2xl", "5xl"]} fontWeight="bold" color="gray.50">
           Tundê Cavalcante
