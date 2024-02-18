@@ -8,34 +8,33 @@ export function AboutMe(): JSX.Element {
         fontWeight={["500", "400"]}
         color="gray.100"
       >
-        Como desenvolvedor de software cearense, sou apaixonado por tecnologia,
-        música e história. Tenho foco em desenvolvimento backend utilizando
-        TypeScript, e prezo pela criação de códigos escaláveis e de alta
-        qualidade, seguindo os princípios SOLID e Clean Code. Minha experiência
-        abrange uma variedade de tecnologias, incluindo Java, Spring Boot,
-        Express, MongoDB, Jest, Prisma e Docker.
+        As a software developer from Ceará, I'm passionate about technology,
+        music, and history. My focus lies in backend development using
+        TypeScript, and I prioritize creating scalable and high-quality code,
+        following SOLID and Clean Code principles. My experience spans across a
+        variety of technologies, including Java, Spring Boot, Express, MongoDB,
+        Jest, Prisma, and Docker.
       </Text>
       <Text
         fontSize={["md", "xl"]}
         fontWeight={["500", "400"]}
         color="gray.100"
       >
-        Com um profundo entendimento dos fundamentos do desenvolvimento de
-        software, busco sempre criar soluções eficientes e robustas. Minha
-        abordagem se baseia em projetar arquiteturas sólidas e modularizadas,
-        facilitando a manutenção e expansão dos sistemas.
+        With a deep understanding of software development fundamentals, I always
+        strive to create efficient and robust solutions. My approach is based on
+        designing solid and modular architectures, facilitating system
+        maintenance and expansion.
       </Text>
       <Text
         fontSize={["md", "xl"]}
         fontWeight={["500", "400"]}
         color="gray.100"
       >
-        Tenho um forte compromisso com a qualidade do código, garantindo que
-        esteja limpo, legível e bem documentado. Acredito que um código bem
-        estruturado não apenas facilita a colaboração entre equipes, mas também
-        reduz os custos de manutenção a longo prazo. Estou constantemente em
-        busca de novos desafios e projetos estimulantes, onde eu possa aplicar
-        meu conhecimento e experiência para criar soluções inovadoras.
+        I am deeply committed to code quality, ensuring it's clean, readable,
+        and well-documented. I believe well-structured code not only facilitates
+        collaboration among teams but also reduces long-term maintenance costs.
+        I am constantly seeking new challenges and exciting projects where I can
+        apply my knowledge and experience to create innovative solutions.
       </Text>
     </Stack>
   );

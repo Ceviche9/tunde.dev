@@ -5,19 +5,19 @@
       "title": "Curso em Vídeo - Python",
       "where": "Curso em Vídeo",
       "coursesLink": "https://www.cursoemvideo.com/curso/python-3-mundo-1/",
-      "status": "Completo",
-      "about": "Curso de Python dividido em 3 módulos: Apresentação da linguagem python, Estruturas de repetição e estruturas de dados, estruturas de tuplas, listas, dicionários, além disso,também ensina funções,módulos e pacotes e tratamentos de erros.",
+      "status": "Completed",
+      "about": "Python course divided into 3 modules: Introduction to the Python language, Repetition structures and data structures, tuples, lists, dictionaries, as well as teaching functions, modules, packages, and error handling.",
       "skills": [
-        "Introdução a Programação",
-        "Primeiros passos com o Python",
-        "Condições em Python",
-        "Repetições em Python",
-        "Tuplas",
-        "Listas",
-        "Dicionários",
-        "Funções",
-        "Modularização",
-        "Tratamento de erros em Python"
+        "Introduction to Programming",
+        "First steps with Python",
+        "Conditions in Python",
+        "Repetitions in Python",
+        "Tuples",
+        "Lists",
+        "Dictionaries",
+        "Functions",
+        "Modularization",
+        "Error handling in Python"
       ]
     },
     {
@@ -25,18 +25,18 @@
       "title": "Curso de JavaScript e TypeScript do básico ao avançado",
       "where": "Udemy",
       "coursesLink": "https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/",
-      "status": "Completo",
-      "about": "Javascript moderno (ES6+) para front-end (com Webpack, babel, React, React Hooks, Redux, HTML5, CSS3 e mais) e back-end (com Node, Express, MySQL / MariaDB, MongoDB, PostgreSQL, Next.Js, Strapi e mais).",
+      "status": "Completed",
+      "about": "Modern JavaScript (ES6+) for front-end (with Webpack, Babel, React, React Hooks, Redux, HTML5, CSS3 and more) and back-end (with Node, Express, MySQL/MariaDB, MongoDB, PostgreSQL, Next.Js, Strapi and more).",
       "skills": [
-        "Fundamentos",
-        "HTML5 e CSS3",
+        "Foundations",
+        "HTML5 and CSS3",
         "Node.Js",
         "JS Tooling",
         "TypeScript",
-        "Segurança",
-        "API Rest",
+        "Security",
+        "Rest API",
         "React",
-        "Bancos de dados SQL",
+        "SQL Databases",
         "Design Patterns"
       ]
     },
@@ -45,31 +45,31 @@
       "title": "NLW 6 - Trilha NodeJs",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/",
-      "status": "Completo",
-      "about": "Bootcamp sobre desenvolvimento back-end, onde foi desenvolvido uma aplicação com arquitetura escalável e simples para a web utilizando uma linguagem flexível e popular.",
+      "status": "Completed",
+      "about": "Bootcamp on backend development, where an application with scalable and simple architecture for the web using a flexible and popular language was developed.",
       "skills": [
         "NodeJs",
-        "Typescript",
+        "TypeScript",
         "Express",
-        "Banco de dados SQLite",
+        "SQLite Database",
         "TypeORM",
         "JSONWebToken",
-        "API Rest"
+        "Rest API"
       ]
     },
     {
       "id": 4,
-      "title": "NLW 6 - Trilha React",
+      "title": "NLW 6 - Trilha ReacJs",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/",
-      "status": "Completo",
-      "about": "Bootcamp sobre desenvolvimento front-end, onde foi desenvolvido uma aplicação com interface modernas e reativas na web utilizando uma biblioteca modular e escalável.",
+      "status": "Completed",
+      "about": "Bootcamp on front-end development, where an application with modern and reactive interfaces on the web using a modular and scalable library was developed.",
       "skills": [
         "React",
-        "Typescript",
+        "TypeScript",
         "NodeJs",
-        "Integração com Firebase",
-        "Estilização com Sass",
+        "Integration with Firebase",
+        "Styling with Sass",
         "React hooks"
       ]
     },
@@ -78,16 +78,16 @@
       "title": "Ignite - ReactJS",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/ignite",
-      "status": "Completo",
-      "about": "Programa de aceleração como foco em especialização, para quem já domina programação, nessa trilha mostra como construir interfaces modernas e reativas na web utilizando uma biblioteca modular e escalável.",
+      "status": "Completed",
+      "about": "Acceleration program focused on specialization, for those who already master programming, this track shows how to build modern and reactive interfaces on the web using a modular and scalable library.",
       "skills": [
-        "Fundamentos do Reacjs.",
-        "fundamentos do NextJs .",
+        "Reactjs Fundamentals.",
+        "NextJs Fundamentals.",
         "Front-end JAMStack.",
-        "Data Fetching e cache local.",
-        "Autenticação e autorização.",
-        "Teste unitários.",
-        "Deploy de aplicações."
+        "Data Fetching and local cache.",
+        "Authentication and authorization.",
+        "Unit testing.",
+        "Application deployment."
       ]
     },
     {
@@ -95,17 +95,17 @@
       "title": "Ignite - NodeJS",
       "where": "Rocketseat",
       "coursesLink": "https://www.rocketseat.com.br/",
-      "status": "Completo",
-      "about": "Programa de aceleração como foco em especialização, para quem já domina programação, nessa trilha mostra como construir construir arquiteturas escaláveis e simples para a web utilizando uma linguagem flexível e popular.",
+      "status": "Completed",
+      "about": "Acceleration program focused on specialization, for those who already master programming, this track shows how to build scalable and simple architectures for the web using a flexible and popular language.",
       "skills": [
-        "Conceitos do Node.js",
-        "Trabalhando com middlewares",
-        "Introdução ao SOLID",
-        "Documentando com Swagger",
+        "Node.js Concepts",
+        "Working with middlewares",
+        "Introduction to SOLID",
+        "Documenting with Swagger",
         "Database Queries",
-        "Testes unitários",
-        "Testes de integração",
-        "Trabalhando com refresh_token e e-mail"
+        "Unit tests",
+        "Integration tests",
+        "Working with refresh_token and email"
       ]
     },
     {
@@ -113,11 +113,11 @@
       "title": "Formação Nest.js",
       "where": "Alura",
       "coursesLink": "https://www.alura.com.br",
-      "status": "Completo",
-      "about": "NestJS é um framework para construção de aplicações server-side eficientes, confiáveis e escalonáveis em Node.js. Ele usa o JavaScript moderno, mas é escrito com TypeScript, oferecendo o melhor de ambos os mundos: flexibilidade e tipagem forte.",
+      "status": "Completed",
+      "about": "NestJS is a framework for building efficient, reliable, and scalable server-side applications in Node.js. It uses modern JavaScript, but it's written with TypeScript, offering the best of both worlds: flexibility and strong typing.",
       "skills": [
-        "Conceitos do Nest.js",
-        "API Restful",
+        "Nest.js Concepts",
+        "Restful API",
         "TypeORM",
         "PostgreSQL",
         "Repository Pattern",
@@ -131,15 +131,15 @@
       "title": "Formação Java e Spring Boot",
       "where": "Alura",
       "coursesLink": "https://www.alura.com.br",
-      "status": "Completo",
-      "about": "Java Spring Boot (Spring Boot) é uma ferramenta que torna o desenvolvimento de aplicativos web e microsserviços com Spring Framework mais rápido e fácil.",
+      "status": "Completed",
+      "about": "Java Spring Boot (Spring Boot) is a tool that makes it faster and easier to develop web applications and microservices with Spring Framework.",
       "skills": [
-        "API Rest em Java",
+        "Rest API in Java",
         "Flyway",
         "Spring boot",
         "Spring Security",
-        "Princípios SOLID",
-        "Testes automatizados",
+        "SOLID Principles",
+        "Automated tests",
         "Bean Validation",
         "JWT"
       ]
@@ -149,17 +149,17 @@
       "title": "Android com Kotlin: criando um app",
       "where": "Alura",
       "coursesLink": "https://www.alura.com.br",
-      "status": "Completo",
-      "about": "Kotlin é uma linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada, desenvolvida pela JetBrains em 2011.",
+      "status": "Completed",
+      "about": "Kotlin is a cross-platform, object-oriented, functional, concise, and statically typed programming language developed by JetBrains in 2011.",
       "skills": [
-        "Conceitos de Kotlin",
-        "O que é o Android",
-        "Criação e implementação de layouts com Constraint Layout",
-        "Listagem com RecyclerView",
-        "Utilização do padrão DAO",
-        "Técnicas de refatoração",
-        "Princípios SOLID",
-        "O que são Activities e como criá-las"
+        "Kotlin Concepts",
+        "What is Android",
+        "Creation and implementation of layouts with Constraint Layout",
+        "Listing with RecyclerView",
+        "Use of DAO pattern",
+        "Refactoring techniques",
+        "SOLID Principles",
+        "What are Activities and how to create them"
       ]
     }
   ]

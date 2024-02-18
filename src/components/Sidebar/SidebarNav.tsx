@@ -16,18 +16,18 @@ export const SidebarNav = ({ isCurrentPage }: SidebarProps): JSX.Element => {
               <NavLink
                 icon={FaUserAstronaut}
                 href="/"
-                title="Sobre"
+                title="About"
                 isCurrentPage
               />
-              <NavLink icon={BsCodeSlash} href="/projects" title="Projetos" />
+              <NavLink icon={BsCodeSlash} href="/projects" title="Projects" />
             </>
           ) : (
             <>
-              <NavLink icon={FaUserAstronaut} href="/" title="Sobre" />
+              <NavLink icon={FaUserAstronaut} href="/" title="About" />
               <NavLink
                 icon={BsCodeSlash}
                 href="/projects"
-                title="Projetos"
+                title="Projects"
                 isCurrentPage
               />
             </>
