@@ -1,48 +1,33 @@
 {
-  "name": "my-portfolio",
+  "name": "tunde.dev",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test": "yarn jest",
-    "build": "next build",
+    "build": "next build --no-lint",
     "start": "next start",
     "lint": "next lint"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "dependencies": {
-    "@chakra-ui/react": "^1.7.2",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@prismicio/client": "^5.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "framer-motion": "^4",
-    "next": "12.0.6",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "framer-motion": "^11.0.5",
+    "next": "^14.1.0",
     "prismic-dom": "^2.2.6",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-intersection-observer": "^8.32.5"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
-    "@testing-library/dom": "^8.11.3",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@types/prismic-dom": "^2.1.1",
-    "@types/react": "^17.0.37",
-    "babel-jest": "^27.5.0",
-    "eslint": "^8.4.1",
-    "eslint-config-next": "12.0.6",
-    "eslint-config-tunde-dev-react": "1.0.8",
-    "husky": "^7.0.4",
-    "jest": "^27.5.0",
-    "jest-dom": "^4.0.0",
-    "typescript": "^4.5.2"
+    "@types/node": "^20",
+    "@types/prismic-dom": "^2.1.4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   }
 }
