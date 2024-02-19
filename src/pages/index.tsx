@@ -63,7 +63,11 @@ export default function Home() {
             <Text fontSize="2xl" fontWeight="400" color="purple.500">
               {"<"}
             </Text>
-            <Text fontSize={["2xl", "3xl"]} fontWeight="bold" color="gray.100">
+            <Text
+              fontSize={["2xl", "3xl"]}
+              fontWeight="bold"
+              color="gray.100"
+            >
               About
             </Text>
             <Text fontSize="2xl" fontWeight="400" color="purple.500">
