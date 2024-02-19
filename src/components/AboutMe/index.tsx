@@ -8,12 +8,11 @@ export function AboutMe(): JSX.Element {
         fontWeight={["500", "400"]}
         color="gray.100"
       >
-        As a software developer from Ceará, I'm passionate about technology,
-        music, and history. My focus lies in backend development using
-        TypeScript, and I prioritize creating scalable and high-quality code,
-        following SOLID and Clean Code principles. My experience spans across a
-        variety of technologies, including Java, Spring Boot, Express, MongoDB,
-        Jest, Prisma, and Docker.
+        I'm passionate about technology, music, and history. My focus lies in
+        backend development using TypeScript, and I prioritize creating scalable
+        and high-quality code, following SOLID and Clean Code principles. My
+        experience spans across a variety of technologies, including Java,
+        Spring Boot, Express, MongoDB, Jest, Prisma, and Docker.
       </Text>
       <Text
         fontSize={["md", "xl"]}
