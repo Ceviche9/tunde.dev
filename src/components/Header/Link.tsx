@@ -1,52 +1,53 @@
-import {Text} from "@chakra-ui/react"
-import NextLink from "next/link"
+import { Text } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 type LinkProps = {
-  isSelected?: boolean
-  title: string
-  href: string
-}
+  isSelected?: boolean;
+  title: string;
+  href: string;
+};
 
-export function LinkComponent({isSelected = false, title, href}: LinkProps): JSX.Element {
+export function LinkComponent({
+  isSelected = false,
+  title,
+  href,
+}: LinkProps): JSX.Element {
   // Caso o usuário esteja na página do link, a estilização será diferente.
-  if(isSelected) {
-    return(
+  if (isSelected) {
+    return (
       <NextLink href={href} passHref>
         <Text
           fontSize={["xs", "md"]}
-          fontWeight="400" 
+          fontWeight="400"
           color="gray.300"
           _hover={{
             cursor: "pointer",
             borderBottomRadius: "4",
             borderBottomWidth: "medium",
-            borderColor: "gray.500"
+            borderColor: "gray.500",
           }}
         >
           {title}
         </Text>
-    </NextLink>
-    )
+      </NextLink>
+    );
   }
 
   return (
-    <NextLink 
-    href={href} 
-    passHref
-  >
-      <Text 
+    <NextLink href={href} passHref>
+      <Text
         fontSize={["xs", "md"]}
         fontWeight="500"
         borderBottomRadius="4"
         borderBottomWidth="medium"
-        borderColor="purple.500"
+        borderColor="pink.500"
         _hover={{
           cursor: "pointer",
-          borderColor: "purple.300"               
+          borderColor: "pink.700",
         }}
       >
         {title}
       </Text>
     </NextLink>
-  )
+  );
 }

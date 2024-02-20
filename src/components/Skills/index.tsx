@@ -76,9 +76,9 @@ export const SkillsContainer = (): JSX.Element => {
                 p="10"
                 h={[140, 160]}
                 w={[140, 160]}
-                bgColor={["#290240", "#150121"]}
+                bgColor={["gray.600", "gray.700"]}
                 borderBottomWidth="medium"
-                borderColor="purple.700"
+                borderColor="gray.200"
                 onMouseEnter={() => {
                   setShowLabel(true);
                 }}
@@ -88,9 +88,9 @@ export const SkillsContainer = (): JSX.Element => {
                 borderRadius="25"
                 _hover={{
                   borderWidth: "medium",
-                  borderColor: "purple.500",
+                  borderColor: "pink.400",
                   opacity: "1",
-                  bgColor: "#0d0114", // #290240
+                  bgColor: "gray.900", // #290240
                   cursor: "pointer",
                 }}
               >

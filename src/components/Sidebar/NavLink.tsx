@@ -29,9 +29,9 @@ export const NavLink = ({
         borderBottomWidth="medium"
         borderBottomRadius="4"
         borderBottomColor="pink.500"
-        bgColor="#0e0116"
+        bgColor="gray.900"
         _hover={{
-          bgColor: "#0e0116",
+          bgColor: "gray.900",
         }}
         color="white"
         fontSize="xl"
@@ -47,9 +47,9 @@ export const NavLink = ({
       leftIcon={<Icon as={icon} />}
       p="3"
       justifyContent="flex-start"
-      bgColor="#0e0116"
+      bgColor="gray.700"
       _hover={{
-        bgColor: "#0e0116",
+        bgColor: "gray.900",
       }}
       fontSize="xl"
       onClick={() => handleClickButton(href, isExternal)}

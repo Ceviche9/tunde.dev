@@ -38,8 +38,9 @@ export const Course = ({
       borderRadius={25}
       borderBottomWidth="medium"
       borderTopWidth="thin"
-      borderTopColor="purple.800"
-      borderBottomColor="purple.700"
+      borderTopColor="gray.300"
+      borderBottomColor="gray.400"
+      bgColor="gray.700"
     >
       <AboutCourse title={title} about={about} href={coursesLink} />
       <HStack justify="space-between" px="3">

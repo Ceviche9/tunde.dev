@@ -17,7 +17,7 @@ export const Sidebar = ({ isCurrentPage }: SidebarProps): JSX.Element => {
   return (
     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
       <DrawerOverlay p="4">
-        <DrawerContent bgColor="#0e0116">
+        <DrawerContent bgColor="gray.800">
           <DrawerCloseButton mt="6" />
           <DrawerHeader>Navigation</DrawerHeader>
           <DrawerBody>

@@ -1,25 +1,27 @@
-import {HStack, Text} from "@chakra-ui/react"
+import { HStack, Text } from "@chakra-ui/react";
 
 type TechnologiesProps = {
-  title: string
-}
+  title: string;
+};
 
-export const Technologies = ({title}: TechnologiesProps): JSX.Element => {
-  return(
+export const Technologies = ({ title }: TechnologiesProps): JSX.Element => {
+  return (
     <HStack justifySelf="flex-start">
-      <Text fontSize="md" fontWeight="400" color="purple.300">{'>'}</Text>
-      <Text 
-        fontSize={["sm", "md"]} 
-        fontWeight="bold" 
+      <Text fontSize="md" fontWeight="400" color="pink.400">
+        {">"}
+      </Text>
+      <Text
+        fontSize={["sm", "md"]}
+        fontWeight="bold"
         color="gray.100"
         _hover={{
           color: "gray.50",
           fontSize: "lg",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
       >
         {title}
       </Text>
     </HStack>
-  )
-}
+  );
+};
