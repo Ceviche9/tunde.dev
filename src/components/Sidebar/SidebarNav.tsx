@@ -34,7 +34,7 @@ export const SidebarNav = ({ isCurrentPage }: SidebarProps): JSX.Element => {
           )}
           <NavLink
             icon={BsNewspaper}
-            href="https://spacetraveling-tun.vercel.app/"
+            href="https://tunde-blog.vercel.app/"
             isExternal
             title="Blog"
           />
