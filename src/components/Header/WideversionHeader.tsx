@@ -17,7 +17,7 @@ export const WideVersionHeader = ({ isHomePage = false }: HeaderProps) => {
 
           <LinkComponent isSelected title="Projects" href="/projects" />
 
-          <Link href="https://spacetraveling-tun.vercel.app/" isExternal>
+          <Link href="https://tunde-blog.vercel.app/" isExternal>
             <Text
               fontSize={["xs", "md"]}
               fontWeight="400"
@@ -44,7 +44,7 @@ export const WideVersionHeader = ({ isHomePage = false }: HeaderProps) => {
 
         <LinkComponent title="Projects" href="/projects" />
 
-        <Link href="https://spacetraveling-tun.vercel.app/" isExternal>
+        <Link href="https://tunde-blog.vercel.app/" isExternal>
           <Text
             fontSize={["xs", "md"]}
             fontWeight="400"
