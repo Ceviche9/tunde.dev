@@ -5,7 +5,10 @@ export function Logo(): JSX.Element {
   return (
     <HStack spacing={0}>
       <Text fontWeight="bold" fontSize={["xl", "2xl"]}>
-        Tundê.
+        Tundê
+      </Text>
+      <Text color="pink.400" fontWeight="bold" fontSize={["xl", "2xl"]}>
+        .
       </Text>
       <Dev size={45} />
     </HStack>

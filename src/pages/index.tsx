@@ -60,17 +60,13 @@ export default function Home() {
           flexDirection="column"
         >
           <HStack>
-            <Text fontSize="2xl" fontWeight="400" color="purple.500">
+            <Text fontSize="2xl" fontWeight="400" color="pink.400">
               {"<"}
             </Text>
-            <Text
-              fontSize={["2xl", "3xl"]}
-              fontWeight="bold"
-              color="gray.100"
-            >
+            <Text fontSize={["2xl", "3xl"]} fontWeight="bold" color="gray.100">
               About
             </Text>
-            <Text fontSize="2xl" fontWeight="400" color="purple.500">
+            <Text fontSize="2xl" fontWeight="400" color="pink.400">
               {"/>"}
             </Text>
           </HStack>
@@ -82,13 +78,13 @@ export default function Home() {
           <HomePageLinks />
 
           <HStack>
-            <Text fontSize="2xl" fontWeight="400" color="purple.500">
+            <Text fontSize="2xl" fontWeight="400" color="pink.400">
               {"<"}
             </Text>
             <Text fontSize={["2xl", "3xl"]} fontWeight="bold" color="gray.100">
               Courses
             </Text>
-            <Text fontSize="2xl" fontWeight="400" color="purple.500">
+            <Text fontSize="2xl" fontWeight="400" color="pink.400">
               {"/>"}
             </Text>
           </HStack>
@@ -98,13 +94,13 @@ export default function Home() {
           <Courses />
 
           <HStack mt="10">
-            <Text fontSize="2xl" fontWeight="400" color="purple.500">
+            <Text fontSize="2xl" fontWeight="400" color="pink.400">
               {"<"}
             </Text>
             <Text fontSize="3xl" fontWeight="bold" color="gray.100">
               Hard Skills
             </Text>
-            <Text fontSize="2xl" fontWeight="400" color="purple.500">
+            <Text fontSize="2xl" fontWeight="400" color="pink.400">
               {"/>"}
             </Text>
           </HStack>

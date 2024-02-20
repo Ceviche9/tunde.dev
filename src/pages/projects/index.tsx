@@ -129,8 +129,8 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
                   h={[582, 415]}
                   borderRadius={["15", "20"]}
                   borderBottomWidth={["thick", "medium"]}
-                  borderColor="purple.600"
-                  bgColor="purple.900"
+                  borderColor="gray.300"
+                  bgColor="gray.600"
                   align="center"
                   justify="space-between"
                 >
@@ -153,11 +153,11 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
                       <Button
                         fontSize={["md", "lg"]}
                         p={["5", "3"]}
-                        bgColor={["purple.600", "purple.900"]}
+                        bgColor={["gray.600", "gray.900"]}
                         borderWidth={["thin", "medium"]}
-                        borderColor={["purple.500", "purple.700"]}
+                        // borderColor={["pink.200", "pink.300"]}
                         _hover={{
-                          bgColor: "purple.700",
+                          bgColor: "gray.500",
                         }}
                         size="lg"
                         color="white"
@@ -173,17 +173,17 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
           })}
 
           {showLoading ? (
-            <Spinner mt="10" color="purple.500" size="lg" />
+            <Spinner mt="10" color="pink.500" size="lg" />
           ) : nextPage ? (
             <Flex mt="10">
               <Button
                 w={300}
                 p="3"
-                bgColor="#0e0116"
+                bgColor="gray.900"
                 borderWidth="medium"
-                borderColor="purple.700"
+                borderColor="pink.600"
                 _hover={{
-                  bgColor: "purple.700",
+                  bgColor: "gray.500",
                 }}
                 color="white"
                 size="3xl"
@@ -198,11 +198,11 @@ export default function Projects({ projects, next_page }: ProjectsProps) {
                 rightIcon={<LInkIcon size={18} />}
                 w={300}
                 p="3"
-                bgColor="#0e0116"
+                bgColor="pink.600"
                 borderWidth="medium"
-                borderColor="purple.700"
+                borderColor="gray.700"
                 _hover={{
-                  bgColor: "purple.700",
+                  bgColor: "pink.700",
                 }}
                 size="3xl"
                 onClick={() => handleClickButton("https://github.com/Ceviche9")}

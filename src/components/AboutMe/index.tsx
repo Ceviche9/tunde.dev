@@ -2,7 +2,7 @@ import { Stack, Text } from "@chakra-ui/react";
 
 export function AboutMe(): JSX.Element {
   return (
-    <Stack px={["10px", "25px"]} mt="5" direction="column">
+    <Stack spacing={7} px={["10px", "25px"]} mt="5" direction="column">
       <Text
         fontSize={["md", "xl"]}
         fontWeight={["500", "400"]}
